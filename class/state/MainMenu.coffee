@@ -1,6 +1,6 @@
-TinyRPG.MainMenu = (game) ->
+CrucialPain.MainMenu = (game) ->
 
-TinyRPG.MainMenu.prototype =
+CrucialPain.MainMenu.prototype =
     create: ->
         game.mode = 'menu'
         game.stage.setBackgroundColor '#000000'
@@ -17,7 +17,7 @@ TinyRPG.MainMenu.prototype =
     startGame: ->
         game.ui.blank.fadeTo ->
             game.state.clearCurrentState()
-            game.state.start 'Town'
+            game.state.start 'Level'
         return
     update: ->
         game.state.states.Default.update()

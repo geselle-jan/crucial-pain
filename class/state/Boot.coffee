@@ -1,8 +1,8 @@
-TinyRPG = {}
+CrucialPain = {}
 
-TinyRPG.Boot = (game) ->
+CrucialPain.Boot = (game) ->
 
-TinyRPG.Boot.prototype =
+CrucialPain.Boot.prototype =
     preload: ->
         game.time.advancedTiming = true
         # preload the loading indicator first before anything else
@@ -10,9 +10,6 @@ TinyRPG.Boot.prototype =
         @load.image 'preloaderBar', 'asset/sprites/preload_bar.png'
         return
     create: ->
-        game.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL
-        game.scale.setScreenSize()
-        game.scale.refresh()
         game.stage.disableVisibilityChange = true
         game.onBlur.add (->
             game.input.reset()

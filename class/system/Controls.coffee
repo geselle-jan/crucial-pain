@@ -7,6 +7,10 @@ Controls = ->
     @f = false
     @e = false
     @primary = false
+    @newPrimary = false
+    @newSecondary = false
+    @previousPrimary = false
+    @previousSecondary = false
     @secondary = false
     @x = 0
     @y = 0
@@ -29,6 +33,8 @@ Controls::create = ->
     this
 
 Controls::update = ->
+    @previousPrimary = @primary
+    @previousSecondary = @secondary
     if game.input.mouse.button != -1 or @fomerMouse > -1
         if game.input.mouse.button < 0 and @fomerMouse == 0
             @primary = false
@@ -42,6 +48,10 @@ Controls::update = ->
                 @primary = false
                 @secondary = true
         @fomerMouse = game.input.mouse.button
+    @newPrimary = false
+    @newSecondary = false
+    @newPrimary = true if @primary and not @previousPrimary
+    @newSecondary = true if @secondary and not @previousSecondary
     @worldX = game.input.activePointer.worldX
     @worldY = game.input.activePointer.worldY
     @x = game.input.activePointer.x

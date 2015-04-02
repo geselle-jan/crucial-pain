@@ -8,7 +8,6 @@ class Crosshair
         @showHelper = no
         @x = 0
         @y = 0
-        @previousPrimary = no
         @offset =
             x: 14
             y: 14
@@ -55,16 +54,9 @@ class Crosshair
         sprite
 
     update: ->
-        down = no
-        up = no
-        if game.controls.primary and not @previousPrimary
-            down = yes
-        if @previousPrimary and not game.controls.primary
-            up = yes
-        @previousPrimary = game.controls.primary
         currentAnim = @sprite.animations.currentAnim.name
         animDone = @sprite.animations.currentAnim.isFinished
-        if down and currentAnim isnt 'click'
+        if game.controls.newPrimary and currentAnim isnt 'click'
             @sprite.animations.play 'click'
         if currentAnim is 'click' and animDone
             @sprite.animations.play 'loop'

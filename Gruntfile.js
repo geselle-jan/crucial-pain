@@ -23,7 +23,8 @@ module.exports = function(grunt) {
                 'class/entity/ui/Crosshair.coffee',
                 'class/entity/ui/FoeView.coffee',
                 'class/entity/ui/PreloadBar.coffee',
-                'class/entity/character/Character.coffee',
+                'class/entity/map/Wall.coffee',
+                'class/entity/character/Puck.coffee',
                 'class/entity/character/npc/Skeletons.coffee',
                 'class/entity/character/npc/Slimes.coffee',
                 'class/entity/character/npc/Bats.coffee',
@@ -31,7 +32,7 @@ module.exports = function(grunt) {
                 'class/state/Default.coffee',
                 'class/state/Preloader.coffee',
                 'class/state/MainMenu.coffee',
-                'class/state/Town.coffee',
+                'class/state/Level.coffee',
                 'class/system/main.coffee'
             ],
             compile: {
