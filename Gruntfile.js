@@ -23,6 +23,7 @@ module.exports = function(grunt) {
                 'class/entity/ui/Crosshair.coffee',
                 'class/entity/ui/FoeView.coffee',
                 'class/entity/ui/PreloadBar.coffee',
+                'class/entity/map/Level.coffee',
                 'class/entity/map/Wall.coffee',
                 'class/entity/character/Puck.coffee',
                 'class/entity/character/npc/Skeletons.coffee',

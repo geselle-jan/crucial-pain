@@ -13,7 +13,8 @@ class Puck
 		]
 		@bounce = 0.5
 		@sprite = @createSprite()
-		@addAnimations @sprite
+		@addAnimations()
+		@moveToSpawn()
 
 	createSprite: ->
 		sprite = game.add.sprite 0 - @bodySize[2], 0 - @bodySize[3], 'puck'
@@ -24,7 +25,7 @@ class Puck
 		sprite.body.setSize @bodySize[0], @bodySize[1], @bodySize[2], @bodySize[3]
 		sprite
 
-	addAnimations: (sprite) ->
+	addAnimations: ->
 		loopFPS = 10
 		deathFPS = 10
 		@sprite.animations.add 'firstLoop', [7, 0, 1, 2, 3, 4, 5, 6], loopFPS, true
@@ -33,7 +34,7 @@ class Puck
 		@sprite.animations.add 'secondDeath', [30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43], deathFPS, false
 		@sprite.animations.add 'thirdLoop', [51, 45, 46, 47, 48, 49, 50, 44], loopFPS, true
 		@sprite.animations.add 'thirdDeath', [52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65], deathFPS, false
-		sprite.animations.play 'firstLoop'
+		@sprite.animations.play 'firstLoop'
 
 	updateAnimation: ->
 		current = @sprite.animations.currentAnim.name
@@ -41,10 +42,14 @@ class Puck
 			switch current
 				when 'firstDeath' then @sprite.animations.play 'secondLoop'
 				when 'secondDeath' then @sprite.animations.play 'thirdLoop'
-		if @sprite.animations.currentAnim.loop
-			if @health is 2 and current is 'firstLoop' then @sprite.animations.play 'firstDeath'
-			if @health is 1 and current is 'secondLoop' then @sprite.animations.play 'secondDeath'
-			if @health is 0 and current is 'thirdLoop' then @sprite.animations.play 'thirdDeath'
+		if @health is 2 and current isnt 'firstDeath' and current isnt 'secondLoop' then @sprite.animations.play 'firstDeath'
+		if @health is 1 and current isnt 'secondDeath' and current isnt 'thirdLoop' then @sprite.animations.play 'secondDeath'
+		if @health is 0 and current isnt 'thirdDeath' then @sprite.animations.play 'thirdDeath'
+
+	moveToSpawn: ->
+		if game.level
+			spawn = game.level.getSpawn @sprite
+			@moveTo spawn.x, spawn.y
 
 	update: ->
 		if game.controls.newPrimary
@@ -69,7 +74,7 @@ class Puck
 		@ready = no
 
 	moveTo: (x, y) ->
-		@sprite.position.setTo x - @bodySize[2], y - @bodySize[3]
+		@sprite.position.setTo x + 32, y - 16
 
 	damage: ->
 		@health--

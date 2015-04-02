@@ -21,6 +21,8 @@ CrucialPain.Preloader.prototype =
         @load.spritesheet 'wall_2x1', 'asset/sprites/wall_2x1.png', 112, 96
         @load.spritesheet 'wall_3x1', 'asset/sprites/wall_3x1.png', 152, 96
 
+        @load.tilemap '1', 'asset/level/1.json', null, Phaser.Tilemap.TILED_JSON
+
         @load.bitmapFont 'silkscreen', 'asset/fonts/silkscreen/silkscreen.png', 'asset/fonts/silkscreen/silkscreen.fnt'
         return
     create: ->

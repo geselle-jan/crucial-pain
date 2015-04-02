@@ -56,11 +56,12 @@ class Wall
 		@width + 'x' + @height
 
 	createSprite: ->
-		sprite = game.add.sprite @x - @bodySizes[@getSize()][2], @y - @bodySizes[@getSize()][3], 'wall_' + @getSize()
+		sprite = game.add.sprite 0 - @bodySizes[@getSize()][2], 0 - @bodySizes[@getSize()][3], 'wall_' + @getSize()
 		game.physics.enable sprite, Phaser.Physics.ARCADE
 		sprite.anchor.setTo 0, 0
 		sprite.body.immovable = yes
 		sprite.body.setSize @bodySizes[@getSize()][0], @bodySizes[@getSize()][1], @bodySizes[@getSize()][2], @bodySizes[@getSize()][3]
+		sprite.position.setTo @x - @bodySizes[@getSize()][2], @y - @bodySizes[@getSize()][3]
 		sprite
 
 	addAnimations: (sprite) ->
