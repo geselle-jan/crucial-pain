@@ -1,0 +1,39 @@
+{
+  "name": "CrucialPain",
+  "description": "HTML5 game by out of scope",
+  "main": "index.html",
+  "version": "0.0.1",
+  "keywords": [ "crucial", "pain", "oos" ],
+  "homepage": "http://outofscope-dev.com/",
+  "author": {
+    "name": "Jan Geselle"
+  },
+  "private": true,
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-coffee": "^0.13.0",
+    "grunt-contrib-concat": "~0.4.0",
+    "grunt-contrib-jshint": "~0.10.0",
+    "grunt-contrib-qunit": "~0.5.2",
+    "grunt-contrib-uglify": "~0.5.0",
+    "grunt-contrib-watch": "~0.6.1"
+  },
+  "window": {
+    "title": "CrucialPain",
+    "icon": "link.png",
+    "toolbar": false,
+    "frame": true,
+    "width": 1024,
+    "height": 768,
+    "position": "mouse",
+    "min_width": 1024,
+    "min_height": 768,
+    "max_width": 1024,
+    "max_height": 768
+  },
+  "webkit": {
+  }
+}
