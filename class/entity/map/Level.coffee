@@ -4,6 +4,7 @@ class Level
 		@index = options.index ? 1
 		@map = @createMap()
 		@walls = @createWalls()
+		@goal = @createGoal()
 
 	createMap: ->
 		game.add.tilemap '' + @index + ''
@@ -44,7 +45,6 @@ class Level
 	getSpawn: (sprite) ->
 		spawn = no
 		data = @map.objects.entities
-		console.log data
 		for entity in data
 			if entity.name is 'spawn'
 				spawn = new Phaser.Point entity.x, entity.y - sprite.body.height
@@ -52,7 +52,19 @@ class Level
 			spawn = new Phaser.Point 0, 0
 		spawn
 
+	createGoal: ->
+		goal = no
+		data = @map.objects.entities
+		for entity in data
+			console.log entity.name
+			if entity.name is 'goal'
+				goal = new Goal(
+					x: entity.x
+					y: entity.y)
+		goal
+
 	update: ->
 		for wall in @walls
 			wall.update()
+		@goal.update?()
 		

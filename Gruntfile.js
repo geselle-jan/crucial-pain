@@ -14,6 +14,7 @@ module.exports = function(grunt) {
             files: [
                 'class/system/Helpers.coffee',
                 'class/system/Controls.coffee',
+                'class/system/CameraManager.coffee',
                 'class/entity/ui/Blank.coffee',
                 'class/entity/ui/Box.coffee',
                 'class/entity/ui/StatusInfo.coffee',
@@ -25,6 +26,7 @@ module.exports = function(grunt) {
                 'class/entity/ui/PreloadBar.coffee',
                 'class/entity/map/Level.coffee',
                 'class/entity/map/Wall.coffee',
+                'class/entity/map/Goal.coffee',
                 'class/entity/character/Puck.coffee',
                 'class/entity/character/npc/Skeletons.coffee',
                 'class/entity/character/npc/Slimes.coffee',

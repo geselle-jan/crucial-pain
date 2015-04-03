@@ -15,6 +15,7 @@ class Puck
 		@sprite = @createSprite()
 		@addAnimations()
 		@moveToSpawn()
+		@registerCamera()
 
 	createSprite: ->
 		sprite = game.add.sprite 0 - @bodySize[2], 0 - @bodySize[3], 'puck'
@@ -51,6 +52,9 @@ class Puck
 			spawn = game.level.getSpawn @sprite
 			@moveTo spawn.x, spawn.y
 
+	registerCamera: ->
+		game.cameraManager?.registerPlayer @
+
 	update: ->
 		if game.controls.newPrimary
 			@smash()
@@ -74,11 +78,12 @@ class Puck
 		@ready = no
 
 	moveTo: (x, y) ->
-		@sprite.position.setTo x + 32, y - 16
+		@sprite.position.setTo x + @sprite.body.width / 2 - @bodySize[2], y + @sprite.body.height / 2 - @bodySize[3]
 
 	damage: ->
 		@health--
 		@activate()
 		if @health is 0 then @stop()
 			
-		
+	win: ->
+		console.log 'win'

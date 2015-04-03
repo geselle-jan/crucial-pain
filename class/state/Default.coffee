@@ -5,6 +5,7 @@ CrucialPain.Default.prototype =
         unless game.controls?
             game.controls = new Controls
             game.controls.create()
+        game.cameraManager = new CameraManager
         game.ui ?= {}
         game.ui.fps = new FPS
         game.ui.blank = new Blank {visible: yes}
@@ -13,6 +14,7 @@ CrucialPain.Default.prototype =
         return
     update: ->
         game.controls.update()
+        game.cameraManager.update()
         game.ui.fps.update()
         unless game.controls.mobile
             game.ui.crosshair.update()
