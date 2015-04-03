@@ -450,8 +450,8 @@
                  "type":"",
                  "visible":true,
                  "width":0,
-                 "x":64,
-                 "y":368
+                 "x":116,
+                 "y":376
                 }, 
                 {
                  "gid":7,
@@ -465,8 +465,23 @@
                  "type":"",
                  "visible":true,
                  "width":0,
-                 "x":804,
+                 "x":724,
                  "y":364
+                }, 
+                {
+                 "gid":8,
+                 "height":0,
+                 "name":"crab",
+                 "properties":
+                    {
+                     "range":"200"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":444,
+                 "y":360
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -537,6 +552,10 @@
              "1":
                 {
                  "image":"..\/editor-images\/goal.png"
+                },
+             "2":
+                {
+                 "image":"..\/editor-images\/crab.png"
                 }
             },
          "tilewidth":65

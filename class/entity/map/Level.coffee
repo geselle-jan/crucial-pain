@@ -5,6 +5,7 @@ class Level
 		@map = @createMap()
 		@walls = @createWalls()
 		@goal = @createGoal()
+		@enemies = @createEnemies()
 
 	createMap: ->
 		game.add.tilemap '' + @index + ''
@@ -42,6 +43,23 @@ class Level
 				height: 1
 		wallInfo['gid' + data.gid]
 
+	createEnemies: ->
+		enemies = []
+		@createCrabs enemies
+
+	createCrabs: (enemies) ->
+		data = @map.objects.entities
+		for entity in data
+			if entity.name is 'crab'
+				console.log entity
+				range = entity.properties?.range ? 0
+				range = range * 1
+				enemies.push new Crab(
+					x: entity.x
+					y: entity.y
+					range: range)
+		enemies
+
 	getSpawn: (sprite) ->
 		spawn = no
 		data = @map.objects.entities
@@ -56,7 +74,6 @@ class Level
 		goal = no
 		data = @map.objects.entities
 		for entity in data
-			console.log entity.name
 			if entity.name is 'goal'
 				goal = new Goal(
 					x: entity.x
@@ -66,5 +83,7 @@ class Level
 	update: ->
 		for wall in @walls
 			wall.update()
+		for enemy in @enemies
+			enemy.update()
 		@goal.update?()
 		

@@ -7,8 +7,10 @@ CrucialPain.Level.prototype =
         game.stage.setBackgroundColor '#000000'
         @stateChange = false
 
+        game.levelIndex ?= 1
+
         @level = game.level = new Level(
-            index: 1)
+            index: game.levelIndex)
 
         game.puck = new Puck()
 
@@ -23,6 +25,12 @@ CrucialPain.Level.prototype =
         @level.update()
 
         game.puck.update()
+
+        if game.puck.health <= 0
+            game.mode = 'stateChange'
+            game.ui.blank.fadeTo =>
+                game.state.clearCurrentState()
+                @state.start 'Level'
     render: ->
         #game.debug.body @wall1.sprite
         #game.debug.body game.puck.sprite
