@@ -26,11 +26,18 @@ CrucialPain.Level.prototype =
 
         game.puck.update()
 
-        if game.puck.health <= 0
+        if game.puck.health <= 0 and game.mode isnt 'stateChange'
             game.mode = 'stateChange'
             game.ui.blank.fadeTo =>
                 game.state.clearCurrentState()
                 @state.start 'Level'
+
+        if @level.goal.isReached() and game.mode isnt 'stateChange'
+            game.levelIndex++
+            game.mode = 'stateChange'
+            game.ui.blank.fadeTo =>
+                game.state.clearCurrentState()
+                @state.start 'Level' 
     render: ->
         #game.debug.body @wall1.sprite
         #game.debug.body game.puck.sprite

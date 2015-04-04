@@ -13,9 +13,17 @@ CrucialPain.Preloader.prototype =
 
         @load.spritesheet 'cursor', 'asset/sprites/cursor.png', 48, 48
 
-        @load.spritesheet 'goal', 'asset/sprites/goal.png', 96, 96
         @load.spritesheet 'puck', 'asset/sprites/puck.png', 96, 192
         @load.spritesheet 'crab', 'asset/sprites/crab.png', 96, 96
+        @load.spritesheet 'hermit', 'asset/sprites/hermit.png', 96, 96
+        @load.spritesheet 'movingwall', 'asset/sprites/movingwall.png', 72, 96
+        @load.spritesheet 'stopper', 'asset/sprites/stopper.png', 72, 96
+        @load.spritesheet '1up', 'asset/sprites/1up.png', 96, 96
+        @load.spritesheet '1upsmoke', 'asset/sprites/1upsmoke.png', 96, 96
+        @load.spritesheet 'portal', 'asset/sprites/portal.png', 96, 96
+        @load.spritesheet 'portalsmoke', 'asset/sprites/portalsmoke.png', 96, 96
+        @load.spritesheet 'goal', 'asset/sprites/goal.png', 96, 96
+        @load.spritesheet 'goalsmoke', 'asset/sprites/goalsmoke.png', 96, 96
 
         @load.spritesheet 'wall_1x1', 'asset/sprites/wall_1x1.png', 72, 96
         @load.spritesheet 'wall_1x2', 'asset/sprites/wall_1x2.png', 72, 136
@@ -24,6 +32,7 @@ CrucialPain.Preloader.prototype =
         @load.spritesheet 'wall_3x1', 'asset/sprites/wall_3x1.png', 152, 96
 
         @load.tilemap '1', 'asset/level/1.json', null, Phaser.Tilemap.TILED_JSON
+        @load.tilemap '2', 'asset/level/2.json', null, Phaser.Tilemap.TILED_JSON
 
         @load.bitmapFont 'silkscreen', 'asset/fonts/silkscreen/silkscreen.png', 'asset/fonts/silkscreen/silkscreen.fnt'
         return

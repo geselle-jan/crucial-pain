@@ -1,20 +1,13 @@
-class Crab
-
-	bodySize: [
-		38 # width
-		38 # height
-		28 # x
-		39 # y
-	]
-
-	spritesheet: 'crab'
+class Walker
 
 	constructor: (options = {}) ->
 		@x = options.x ? 0
 		@y = options.y ? 0
-		@range = options.range ? 0
+		@rangeX = options.rangeX ? 0
+		@rangeY = options.rangeY ? 0
 		@speed = options.speed ? 1
-		@step = @getStep()
+		@stepX = @getStepX()
+		@stepY = @getStepY()
 		@sprite = @createSprite()
 		@moveTo @x, @y
 		@addAnimations()
@@ -28,16 +21,22 @@ class Crab
 
 	addAnimations: ->
 		loopFPS = 10
-		@sprite.animations.add 'loop', [0, 1, 2], loopFPS, true
+		@sprite.animations.add 'loop', @loopFrames, loopFPS, true
 		@sprite.animations.play 'loop'
 
 	moveTo: (x, y) ->
 		@sprite.position.setTo x - @bodySize[2], y - @bodySize[3] - @bodySize[1]
 
-	getStep: ->
+	getStepX: ->
 		switch
-			when @range > 0 then @speed
-			when @range < 0 then @speed * -1
+			when @rangeX > 0 then @speed
+			when @rangeX < 0 then @speed * -1
+			else 0
+
+	getStepY: ->
+		switch
+			when @rangeY > 0 then @speed
+			when @rangeY < 0 then @speed * -1
 			else 0
 
 	update: ->
@@ -45,15 +44,20 @@ class Crab
 		@checkForCollisions()
 
 	updateMovement: ->
-		newX = @sprite.body.position.x + @step
-		@moveTo newX, @y
-		if newX is @x + @range or newX is @x
-			@changeDirection()
+		newX = @sprite.body.position.x + @stepX
+		newY = @sprite.body.position.y + @stepY + @bodySize[1]
+		@moveTo newX, newY
+		if newX is @x + @rangeX or newX is @x
+			@changeDirectionX()
+		if newY is @y + @rangeY or newY is @y
+			@changeDirectionY()
 
-	changeDirection: ->
-		@step = @step * -1		
+	changeDirectionX: ->
+		@stepX = @stepX * -1
+
+	changeDirectionY: ->
+		@stepY = @stepY * -1
 
 	checkForCollisions: ->
 		if game.physics.arcade.collide game.puck.sprite, @sprite
-			game.puck.stop()
-			game.puck.health = 0
+			@onCollision()

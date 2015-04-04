@@ -61,9 +61,9 @@
  <objectgroup name="entities">
   <object name="spawn" gid="6" x="116" y="376"/>
   <object name="goal" gid="7" x="724" y="364"/>
-  <object name="crab" gid="8" x="444" y="360">
+  <object name="crab" gid="8" x="444" y="284">
    <properties>
-    <property name="range" value="200"/>
+    <property name="rangeY" value="160"/>
    </properties>
   </object>
  </objectgroup>

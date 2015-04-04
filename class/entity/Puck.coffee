@@ -15,7 +15,6 @@ class Puck
 		@sprite = @createSprite()
 		@addAnimations()
 		@moveToSpawn()
-		@registerCamera()
 
 	createSprite: ->
 		sprite = game.add.sprite 0 - @bodySize[2], 0 - @bodySize[3], 'puck'
@@ -39,21 +38,23 @@ class Puck
 
 	updateAnimation: ->
 		current = @sprite.animations.currentAnim.name
+		# resume loop after death animation
 		if @sprite.animations.currentAnim.isFinished
 			switch current
 				when 'firstDeath' then @sprite.animations.play 'secondLoop'
 				when 'secondDeath' then @sprite.animations.play 'thirdLoop'
+		# trigger death animations
 		if @health is 2 and current isnt 'firstDeath' and current isnt 'secondLoop' then @sprite.animations.play 'firstDeath'
 		if @health is 1 and current isnt 'secondDeath' and current isnt 'thirdLoop' then @sprite.animations.play 'secondDeath'
 		if @health is 0 and current isnt 'thirdDeath' then @sprite.animations.play 'thirdDeath'
+		# change loop when health is increased
+		if @health is 3 and current is 'secondLoop' then @sprite.animations.play 'firstLoop'
+		if @health is 2 and current is 'thirdLoop' then @sprite.animations.play 'secondLoop'
 
 	moveToSpawn: ->
 		if game.level
 			spawn = game.level.getSpawn @sprite
 			@moveTo spawn.x, spawn.y
-
-	registerCamera: ->
-		game.cameraManager?.registerPlayer @
 
 	update: ->
 		if game.controls.newPrimary
@@ -84,6 +85,3 @@ class Puck
 		@health--
 		@activate()
 		if @health is 0 then @stop()
-			
-	win: ->
-		console.log 'win'
