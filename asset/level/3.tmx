@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="128" height="96" tilewidth="16" tileheight="16" backgroundcolor="#404040">
+ <tileset firstgid="1" name="walls" tilewidth="122" tileheight="154">
+  <tile id="0">
+   <image width="42" height="73" source="../editor-images/wall_1x1.png"/>
+  </tile>
+  <tile id="1">
+   <image width="42" height="114" source="../editor-images/wall_1x2.png"/>
+  </tile>
+  <tile id="2">
+   <image width="42" height="154" source="../editor-images/wall_1x3.png"/>
+  </tile>
+  <tile id="3">
+   <image width="83" height="74" source="../editor-images/wall_2x1.png"/>
+  </tile>
+  <tile id="4">
+   <image width="122" height="74" source="../editor-images/wall_3x1.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="6" name="enitities" tilewidth="65" tileheight="73">
+  <tile id="0">
+   <image width="65" height="65" source="../editor-images/puck.png"/>
+  </tile>
+  <tile id="1">
+   <image width="40" height="40" source="../editor-images/goal.png"/>
+  </tile>
+  <tile id="2">
+   <image width="38" height="38" source="../editor-images/crab.png"/>
+  </tile>
+  <tile id="3">
+   <image width="39" height="73" source="../editor-images/stopper.png"/>
+  </tile>
+ </tileset>
+ <objectgroup name="walls">
+  <object gid="1" x="16" y="80"/>
+  <object gid="1" x="4" y="156"/>
+  <object gid="1" x="4" y="232"/>
+  <object gid="3" x="4" y="389"/>
+  <object gid="3" x="4" y="547"/>
+  <object gid="3" x="4" y="704"/>
+  <object gid="4" x="884" y="80"/>
+  <object gid="4" x="968" y="80"/>
+  <object gid="4" x="1052" y="80"/>
+  <object gid="4" x="1136" y="80"/>
+  <object gid="4" x="1220" y="80"/>
+  <object gid="4" x="1304" y="80"/>
+  <object gid="4" x="1388" y="80"/>
+  <object gid="5" x="1472" y="80"/>
+  <object gid="5" x="1596" y="80"/>
+  <object gid="1" x="1720" y="80"/>
+  <object gid="1" x="4" y="1364"/>
+  <object gid="3" x="4" y="1288"/>
+  <object gid="3" x="4" y="1132"/>
+  <object gid="3" x="4" y="976"/>
+  <object gid="2" x="4" y="820"/>
+  <object gid="5" x="64" y="80"/>
+  <object gid="5" x="196" y="80"/>
+  <object gid="5" x="324" y="80"/>
+  <object gid="5" x="452" y="80"/>
+  <object gid="5" x="580" y="80"/>
+  <object gid="5" x="708" y="80"/>
+  <object gid="1" x="836" y="80"/>
+  <object gid="1" x="4" y="1452"/>
+  <object gid="4" x="1040" y="1452"/>
+  <object gid="4" x="1124" y="1452"/>
+  <object gid="4" x="1292" y="1452"/>
+  <object gid="4" x="1208" y="1452"/>
+  <object gid="4" x="1376" y="1452"/>
+  <object gid="1" x="1708" y="1452"/>
+  <object gid="5" x="1460" y="1452"/>
+  <object gid="5" x="1584" y="1452"/>
+  <object gid="5" x="184" y="1452"/>
+  <object gid="5" x="52" y="1452"/>
+  <object gid="5" x="568" y="1452"/>
+  <object gid="5" x="312" y="1452"/>
+  <object gid="1" x="824" y="1452"/>
+  <object gid="5" x="440" y="1452"/>
+  <object gid="5" x="696" y="1452"/>
+  <object gid="4" x="956" y="1452"/>
+  <object gid="4" x="872" y="1452"/>
+  <object gid="1" x="1736" y="160"/>
+  <object gid="1" x="1736" y="1368"/>
+  <object gid="3" x="1736" y="551"/>
+  <object gid="3" x="1736" y="708"/>
+  <object gid="3" x="1736" y="980"/>
+  <object gid="1" x="1736" y="236"/>
+  <object gid="3" x="1736" y="1292"/>
+  <object gid="3" x="1736" y="393"/>
+  <object gid="3" x="1736" y="1136"/>
+  <object gid="2" x="1736" y="824"/>
+ </objectgroup>
+ <objectgroup name="entities">
+  <object name="spawn" gid="6" x="116" y="376"/>
+  <object name="goal" gid="7" x="1604" y="1304"/>
+  <object name="crab" gid="8" x="536" y="236">
+   <properties>
+    <property name="rangeY" value="160"/>
+   </properties>
+  </object>
+  <object name="stopper" gid="9" x="372" y="544"/>
+  <object name="stopper" gid="9" x="384" y="872"/>
+  <object name="stopper" gid="9" x="496" y="720"/>
+  <object name="stopper" gid="9" x="148" y="752"/>
+  <object name="stopper" gid="9" x="472" y="1140"/>
+  <object name="stopper" gid="9" x="228" y="1020"/>
+  <object name="stopper" gid="9" x="596" y="984"/>
+  <object name="stopper" gid="9" x="264" y="1252"/>
+  <object name="stopper" gid="9" x="680" y="808"/>
+  <object name="stopper" gid="9" x="668" y="612"/>
+  <object name="stopper" gid="9" x="880" y="520"/>
+  <object name="stopper" gid="9" x="572" y="440"/>
+  <object name="stopper" gid="9" x="796" y="300"/>
+  <object name="stopper" gid="9" x="1352" y="284"/>
+  <object name="stopper" gid="9" x="1056" y="312"/>
+  <object name="stopper" gid="9" x="1556" y="460"/>
+  <object name="stopper" gid="9" x="1256" y="572"/>
+  <object name="stopper" gid="9" x="1464" y="788"/>
+  <object name="stopper" gid="9" x="1048" y="776"/>
+  <object name="stopper" gid="9" x="980" y="1084"/>
+  <object name="stopper" gid="9" x="1288" y="980"/>
+  <object name="stopper" gid="9" x="756" y="1272"/>
+  <object name="stopper" gid="9" x="844" y="952"/>
+  <object name="stopper" gid="9" x="1348" y="1240"/>
+  <object name="stopper" gid="9" x="1112" y="1280"/>
+  <object name="stopper" gid="9" x="1536" y="1068"/>
+ </objectgroup>
+</map>

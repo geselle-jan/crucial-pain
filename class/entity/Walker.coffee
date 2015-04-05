@@ -42,6 +42,7 @@ class Walker
 	update: ->
 		@updateMovement()
 		@checkForCollisions()
+		@checkForOverlap()
 
 	updateMovement: ->
 		newX = @sprite.body.position.x + @stepX
@@ -60,4 +61,8 @@ class Walker
 
 	checkForCollisions: ->
 		if game.physics.arcade.collide game.puck.sprite, @sprite
-			@onCollision()
+			@onCollision?()
+
+	checkForOverlap: ->
+		if game.physics.arcade.overlap game.puck.sprite, @sprite
+			@onOverlap?()

@@ -23,12 +23,12 @@ class Item
 		@sprite.position.setTo x - @bodySize[2], y - @bodySize[3] - @bodySize[1]
 
 	update: ->
-		@checkForCollisions()
+		@checkForOverlap()
 		@updateSmoke()
 
-	checkForCollisions: ->
+	checkForOverlap: ->
 		if game.physics.arcade.overlap game.puck.sprite, @sprite
-			@onCollision()
+			@onOverlap()
 
 	kill: ->
 		@createSmoke()

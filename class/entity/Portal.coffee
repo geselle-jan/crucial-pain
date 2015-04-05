@@ -19,7 +19,7 @@ class Portal extends Item
 		@pid = options.pid ? 1
 		super options
 
-	onCollision: ->
+	onOverlap: ->
 		@kill()
 		target = @getTarget()
 		deltaX = target.sprite.position.x - @sprite.position.x

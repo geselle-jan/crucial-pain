@@ -11,6 +11,9 @@ class Crab extends Walker
 
 	loopFrames: [0, 1, 2, 3]
 
-	onCollision: ->
+	onOverlap: ->
 		game.puck.stop()
 		game.puck.health = 0
+
+	onCollision: ->
+		@onOverlap()
