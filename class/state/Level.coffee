@@ -14,6 +14,10 @@ CrucialPain.Level.prototype =
 
         game.puck = new Puck()
 
+        game.gate = new Gate(
+            x: 410
+            y: 464)
+
         game.state.states.Default.create()
         game.ui.blank.fadeFrom()
     update: ->
@@ -25,6 +29,8 @@ CrucialPain.Level.prototype =
         @level.update()
 
         game.puck.update()
+
+        game.gate.update()
 
         if game.puck.health <= 0 and game.mode isnt 'stateChange'
             game.mode = 'stateChange'
@@ -39,5 +45,6 @@ CrucialPain.Level.prototype =
                 game.state.clearCurrentState()
                 @state.start 'Level' 
     render: ->
-        #game.debug.body @wall1.sprite
+        #game.debug.body game.gate.sprites.n.base
+        #game.debug.body game.gate.sprites.s.base
         #game.debug.body game.puck.sprite

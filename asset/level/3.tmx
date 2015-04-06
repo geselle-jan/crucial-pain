@@ -90,38 +90,69 @@
   <object gid="2" x="1736" y="824"/>
  </objectgroup>
  <objectgroup name="entities">
-  <object name="spawn" gid="6" x="116" y="376"/>
-  <object name="goal" gid="7" x="1604" y="1304"/>
-  <object name="crab" gid="8" x="536" y="236">
-   <properties>
-    <property name="rangeY" value="160"/>
-   </properties>
-  </object>
-  <object name="stopper" gid="9" x="372" y="544"/>
-  <object name="stopper" gid="9" x="384" y="872"/>
-  <object name="stopper" gid="9" x="496" y="720"/>
-  <object name="stopper" gid="9" x="148" y="752"/>
-  <object name="stopper" gid="9" x="472" y="1140"/>
-  <object name="stopper" gid="9" x="228" y="1020"/>
-  <object name="stopper" gid="9" x="596" y="984"/>
-  <object name="stopper" gid="9" x="264" y="1252"/>
-  <object name="stopper" gid="9" x="680" y="808"/>
-  <object name="stopper" gid="9" x="668" y="612"/>
-  <object name="stopper" gid="9" x="880" y="520"/>
-  <object name="stopper" gid="9" x="572" y="440"/>
-  <object name="stopper" gid="9" x="796" y="300"/>
-  <object name="stopper" gid="9" x="1352" y="284"/>
-  <object name="stopper" gid="9" x="1056" y="312"/>
-  <object name="stopper" gid="9" x="1556" y="460"/>
-  <object name="stopper" gid="9" x="1256" y="572"/>
-  <object name="stopper" gid="9" x="1464" y="788"/>
-  <object name="stopper" gid="9" x="1048" y="776"/>
-  <object name="stopper" gid="9" x="980" y="1084"/>
-  <object name="stopper" gid="9" x="1288" y="980"/>
-  <object name="stopper" gid="9" x="756" y="1272"/>
-  <object name="stopper" gid="9" x="844" y="952"/>
-  <object name="stopper" gid="9" x="1348" y="1240"/>
-  <object name="stopper" gid="9" x="1112" y="1280"/>
-  <object name="stopper" gid="9" x="1536" y="1068"/>
+  <object name="spawn" gid="6" x="216" y="264"/>
+  <object name="goal" gid="7" x="1528" y="1232"/>
+  <object name="stopper" gid="9" x="412" y="160"/>
+  <object name="stopper" gid="9" x="192" y="160"/>
+  <object name="stopper" gid="9" x="280" y="160"/>
+  <object name="stopper" gid="9" x="412" y="236"/>
+  <object name="stopper" gid="9" x="148" y="160"/>
+  <object name="stopper" gid="9" x="104" y="160"/>
+  <object name="stopper" gid="9" x="60" y="160"/>
+  <object name="stopper" gid="9" x="368" y="160"/>
+  <object name="stopper" gid="9" x="236" y="160"/>
+  <object name="stopper" gid="9" x="412" y="312"/>
+  <object name="stopper" gid="9" x="324" y="160"/>
+  <object name="stopper" gid="9" x="412" y="388"/>
+  <object name="stopper" gid="9" x="412" y="844"/>
+  <object name="stopper" gid="9" x="412" y="768"/>
+  <object name="stopper" gid="9" x="412" y="920"/>
+  <object name="stopper" gid="9" x="412" y="996"/>
+  <object name="stopper" gid="9" x="412" y="1148"/>
+  <object name="stopper" gid="9" x="412" y="1072"/>
+  <object name="stopper" gid="9" x="412" y="1224"/>
+  <object name="stopper" gid="9" x="60" y="768"/>
+  <object name="stopper" gid="9" x="60" y="616"/>
+  <object name="stopper" gid="9" x="60" y="312"/>
+  <object name="stopper" gid="9" x="60" y="464"/>
+  <object name="stopper" gid="9" x="60" y="236"/>
+  <object name="stopper" gid="9" x="60" y="388"/>
+  <object name="stopper" gid="9" x="60" y="540"/>
+  <object name="stopper" gid="9" x="60" y="692"/>
+  <object name="stopper" gid="9" x="60" y="1224"/>
+  <object name="stopper" gid="9" x="60" y="920"/>
+  <object name="stopper" gid="9" x="60" y="1072"/>
+  <object name="stopper" gid="9" x="60" y="844"/>
+  <object name="stopper" gid="9" x="60" y="996"/>
+  <object name="stopper" gid="9" x="60" y="1148"/>
+  <object name="stopper" gid="9" x="324" y="1300"/>
+  <object name="stopper" gid="9" x="412" y="1300"/>
+  <object name="stopper" gid="9" x="280" y="1300"/>
+  <object name="stopper" gid="9" x="368" y="1300"/>
+  <object name="stopper" gid="9" x="192" y="1300"/>
+  <object name="stopper" gid="9" x="104" y="1300"/>
+  <object name="stopper" gid="9" x="148" y="1300"/>
+  <object name="stopper" gid="9" x="60" y="1300"/>
+  <object name="stopper" gid="9" x="236" y="1300"/>
+  <object name="stopper" gid="9" x="1684" y="1292"/>
+  <object name="stopper" gid="9" x="1684" y="1368"/>
+  <object name="stopper" gid="9" x="1684" y="1140"/>
+  <object name="stopper" gid="9" x="1640" y="1368"/>
+  <object name="stopper" gid="9" x="1596" y="1368"/>
+  <object name="stopper" gid="9" x="1552" y="1368"/>
+  <object name="stopper" gid="9" x="1508" y="1368"/>
+  <object name="stopper" gid="9" x="1464" y="1368"/>
+  <object name="stopper" gid="9" x="1684" y="1216"/>
+  <object name="stopper" gid="9" x="1420" y="1368"/>
+  <object name="stopper" gid="9" x="1552" y="1140"/>
+  <object name="stopper" gid="9" x="1420" y="1140"/>
+  <object name="stopper" gid="9" x="1640" y="1140"/>
+  <object name="stopper" gid="9" x="1596" y="1140"/>
+  <object name="stopper" gid="9" x="1464" y="1140"/>
+  <object name="stopper" gid="9" x="1376" y="1140"/>
+  <object name="stopper" gid="9" x="1508" y="1140"/>
+  <object name="stopper" gid="9" x="1376" y="1292"/>
+  <object name="stopper" gid="9" x="1376" y="1368"/>
+  <object name="stopper" gid="9" x="1376" y="1216"/>
  </objectgroup>
 </map>

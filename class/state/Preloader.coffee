@@ -31,9 +31,33 @@ CrucialPain.Preloader.prototype =
         @load.spritesheet 'wall_2x1', 'asset/sprites/wall_2x1.png', 112, 96
         @load.spritesheet 'wall_3x1', 'asset/sprites/wall_3x1.png', 152, 96
 
-        @load.tilemap '1', 'asset/level/1.json', null, Phaser.Tilemap.TILED_JSON
+        @load.spritesheet 'gate_vert_idle1', 'asset/sprites/gate_vert_idle1.png', 56, 56
+        @load.spritesheet 'gate_vert_idle2', 'asset/sprites/gate_vert_idle2.png', 56, 56
+
+        @load.spritesheet 'gate_horiz_idle1', 'asset/sprites/gate_horiz_idle1.png', 56, 96
+        @load.spritesheet 'gate_horiz_idle2', 'asset/sprites/gate_horiz_idle2.png', 56, 96
+
+        # shrinks start
+        # they have to be edited in photoshop to fit spritesheet standards
+        ###
+        @load.spritesheet 'gate_horiz_shrink1', 'asset/sprites/gate_horiz_shrink1.png', 152, 96
+        @load.spritesheet 'gate_horiz_shrink2', 'asset/sprites/gate_horiz_shrink2.png', 152, 96
+        ###
+        #shrinks end
+        
+        @load.spritesheet 'gate_N_base', 'asset/sprites/gate_N_base.png', 56, 64
+        @load.spritesheet 'gate_S_base', 'asset/sprites/gate_S_base.png', 56, 64
+        @load.spritesheet 'gate_W_base', 'asset/sprites/gate_W_base.png', 32, 96
+        @load.spritesheet 'gate_E_base', 'asset/sprites/gate_E_base.png', 32, 96
+        
+        @load.spritesheet 'gate_N_front', 'asset/sprites/gate_N_front.png', 56, 64
+        @load.spritesheet 'gate_S_front', 'asset/sprites/gate_S_front.png', 56, 56
+        @load.spritesheet 'gate_W_front', 'asset/sprites/gate_W_front.png', 48, 96
+        @load.spritesheet 'gate_E_front', 'asset/sprites/gate_E_front.png', 48, 96
+
+        @load.tilemap '3', 'asset/level/1.json', null, Phaser.Tilemap.TILED_JSON
         @load.tilemap '2', 'asset/level/2.json', null, Phaser.Tilemap.TILED_JSON
-        @load.tilemap '3', 'asset/level/3.json', null, Phaser.Tilemap.TILED_JSON
+        @load.tilemap '1', 'asset/level/3.json', null, Phaser.Tilemap.TILED_JSON
 
         @load.bitmapFont 'silkscreen', 'asset/fonts/silkscreen/silkscreen.png', 'asset/fonts/silkscreen/silkscreen.fnt'
         return
