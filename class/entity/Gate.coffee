@@ -140,6 +140,7 @@ class Gate
 		@timeOpened = options.timeOpened ? 0
 		@timeClosed = options.timeClosed ? 0
 		@orientation = options.orientation ? 'horizontal'
+		verticalModificator = -192
 		if @orientation isnt 'horizontal'
 			@orientation = 'vertical'
 		if @orientation is 'horizontal'
@@ -183,16 +184,16 @@ class Gate
 			@sprites =
 				n:
 					center:
-						top: @createSprite @x, @y - 16, @spritesheets.n.center.top, @bodySizes.n.center.top, no, yes
-						bottom: @createSprite @x, @y + 24, @spritesheets.n.center.bottom, @bodySizes.n.center.bottom, no, yes
-					base: @createSprite @x, @y + 40, @spritesheets.n.base, @bodySizes.n.base, yes, yes
-					front: @createSprite @x, @y + 72, @spritesheets.n.front, @bodySizes.n.front, no, yes
+						top: @createSprite @x, @y - 16 + verticalModificator, @spritesheets.n.center.top, @bodySizes.n.center.top, no, yes
+						bottom: @createSprite @x, @y + 24 + verticalModificator, @spritesheets.n.center.bottom, @bodySizes.n.center.bottom, no, yes
+					base: @createSprite @x, @y + 40 + verticalModificator, @spritesheets.n.base, @bodySizes.n.base, yes, yes
+					front: @createSprite @x, @y + 72 + verticalModificator, @spritesheets.n.front, @bodySizes.n.front, no, yes
 				s:
 					center:
-						top: @createSprite @x, @y + 104, @spritesheets.s.center.top, @bodySizes.s.center.top, no, yes
-						bottom: @createSprite @x, @y + 144, @spritesheets.s.center.bottom, @bodySizes.s.center.bottom, no, yes
-					base: @createSprite @x, @y + 192, @spritesheets.s.base, @bodySizes.s.base, yes, yes
-					front: @createSprite @x, @y + 72, @spritesheets.s.front, @bodySizes.s.front, no, yes
+						top: @createSprite @x, @y + 104 + verticalModificator, @spritesheets.s.center.top, @bodySizes.s.center.top, no, yes
+						bottom: @createSprite @x, @y + 144 + verticalModificator, @spritesheets.s.center.bottom, @bodySizes.s.center.bottom, no, yes
+					base: @createSprite @x, @y + 192 + verticalModificator, @spritesheets.s.base, @bodySizes.s.base, yes, yes
+					front: @createSprite @x, @y + 72 + verticalModificator, @spritesheets.s.front, @bodySizes.s.front, no, yes
 			@closedPositions =
 				n:
 					front:

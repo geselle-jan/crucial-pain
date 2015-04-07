@@ -10,6 +10,7 @@ class Level
 		@stoppers = @createStoppers()
 		@oneUps = @createOneUps()
 		@portals = @createPortals()
+		@gates = @createGates()
 
 	createMap: ->
 		game.add.tilemap '' + @index + ''
@@ -64,11 +65,14 @@ class Level
 				rangeX = rangeX * 1
 				rangeY = entity.properties?.rangeY ? 0
 				rangeY = rangeY * 1
+				speed = entity.properties?.speed ? 1
+				speed = speed * 1
 				walkers.push new entityClass(
 					x: entity.x
 					y: entity.y
 					rangeX: rangeX
-					rangeY: rangeY)
+					rangeY: rangeY
+					speed: speed)
 		walkers
 
 	createStoppers: ->
@@ -80,6 +84,35 @@ class Level
 					x: entity.x
 					y: entity.y)
 		stoppers
+
+	createGates: ->
+		gates = []
+		data = @map.objects.entities
+		for entity in data
+			if entity.name is 'gateHorizontal'
+				timeClosed = entity.properties?.timeClosed ? 0
+				timeClosed = timeClosed * 1
+				timeOpened = entity.properties?.timeOpened ? 0
+				timeOpened = timeOpened * 1
+				gates.push new Gate(
+					x: entity.x
+					y: entity.y
+					timeClosed: timeClosed
+					timeOpened: timeOpened
+					orientation: 'horizontal')
+		for entity in data
+			if entity.name is 'gateVertical'
+				timeClosed = entity.properties?.timeClosed ? 0
+				timeClosed = timeClosed * 1
+				timeOpened = entity.properties?.timeOpened ? 0
+				timeOpened = timeOpened * 1
+				gates.push new Gate(
+					x: entity.x
+					y: entity.y
+					timeClosed: timeClosed
+					timeOpened: timeOpened
+					orientation: 'vertical')
+		gates
 
 	getSpawn: (sprite) ->
 		spawn = no
@@ -135,5 +168,7 @@ class Level
 			oneUp.update()
 		for portal in @portals
 			portal.update()
+		for gate in @gates
+			gate.update()
 		@goal.update?()
 		
