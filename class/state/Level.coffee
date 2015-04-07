@@ -45,6 +45,4 @@ CrucialPain.Level.prototype =
                 game.state.clearCurrentState()
                 @state.start 'Level' 
     render: ->
-        #game.debug.body game.gate.sprites.n.base
-        #game.debug.body game.gate.sprites.s.base
         #game.debug.body game.puck.sprite
