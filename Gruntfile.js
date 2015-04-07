@@ -61,7 +61,7 @@ module.exports = function(grunt) {
             },
             dist: {
                 src: 'compiled.js',
-                dest: 'main.js'
+                dest: 'www/main.js'
             }
         },
         watch: {

@@ -35,5 +35,4 @@ class PreloadBar
         @hAlignCenter()
     
     getSprite: ->
-        console.log @bar
         @bar

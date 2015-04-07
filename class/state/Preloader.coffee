@@ -8,7 +8,7 @@ CrucialPain.Preloader.prototype =
             bar: 'preloaderBar'
             center: yes)
         @load.setPreloadSprite @preloadBar.getSprite()
-
+        #console.log @preloadBar.getSprite()
         @load.spritesheet 'titlescreen', 'asset/sprites/titlescreen.png', 1024, 768
 
         @load.spritesheet 'cursor', 'asset/sprites/cursor.png', 48, 48

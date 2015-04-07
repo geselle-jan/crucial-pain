@@ -1,3 +1,6 @@
+window.onerror = (message, url, lineNumber) ->
+    console.log 'Error: ' + message + ' in ' + url + ' at line ' + lineNumber
+
 game = new (Phaser.Game)(1024, 768, Phaser.CANVAS, 'crucialPain', {}, false, false)
 # add game states
 game.state.add 'Boot', CrucialPain.Boot
