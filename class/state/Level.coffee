@@ -16,7 +16,10 @@ CrucialPain.Level.prototype =
 
         game.gate = new Gate(
             x: 410
-            y: 464)
+            y: 464
+            orientation: 'vertical',
+            timeOpened: 1000
+            timeClosed: 5000)
 
         game.state.states.Default.create()
         game.ui.blank.fadeFrom()
