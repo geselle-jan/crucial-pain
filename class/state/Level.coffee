@@ -34,6 +34,9 @@ CrucialPain.Level.prototype =
 
         if @level.goal.isReached() and game.mode isnt 'stateChange'
             game.levelIndex++
+            unless game.cache._tilemaps[''+game.levelIndex+'']
+                game.levelIndex = 1
+                alert 'no more levels, will return to level 1'
             game.mode = 'stateChange'
             game.ui.blank.fadeTo =>
                 game.state.clearCurrentState()
