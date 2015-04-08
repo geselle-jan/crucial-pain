@@ -15,6 +15,7 @@ module.exports = function(grunt) {
                 'class/system/Helpers.coffee',
                 'class/system/Controls.coffee',
                 'class/system/CameraManager.coffee',
+                'class/system/ScaleManager.coffee',
                 'class/entity/ui/Blank.coffee',
                 'class/entity/ui/Box.coffee',
                 'class/entity/ui/StatusInfo.coffee',

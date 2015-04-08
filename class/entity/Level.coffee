@@ -16,7 +16,7 @@ class Level
 		game.add.tilemap '' + @index + ''
 
 	setBounds: ->
-		game.world.setBounds 0,0, @map.widthInPixels, @map.heightInPixels
+		game.world.setBounds scaleManager.levelOffsetX * -1, scaleManager.levelOffsetY * -1, @map.widthInPixels + scaleManager.levelOffsetX, @map.heightInPixels + scaleManager.levelOffsetY
 
 	createWalls: ->
 		walls = []

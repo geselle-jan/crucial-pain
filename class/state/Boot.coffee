@@ -10,6 +10,9 @@ CrucialPain.Boot.prototype =
         @load.image 'preloaderBar', 'asset/sprites/preload_bar.png'
         return
     create: ->
+        game.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL
+        game.scale.setScreenSize()
+        game.scale.refresh()
         game.stage.disableVisibilityChange = true
         game.onBlur.add (->
             game.input.reset()

@@ -23,12 +23,18 @@ class PreloadBar
             @bg.position.y = game.height / 2 - @bg.height / 2
         if @bar
             @bar.position.y = game.height / 2 - @bar.height / 2
+        if scaleManager?
+            @bg.position.y += scaleManager.levelOffsetY
+            @bar.position.y += scaleManager.levelOffsetY
 
     hAlignCenter: ->
         if @bg
             @bg.position.x = game.width / 2 - @bg.width / 2
         if @bar
             @bar.position.x = game.width / 2 - @bar.width / 2
+        if scaleManager?
+            @bg.position.x += scaleManager.levelOffsetX
+            @bar.position.x += scaleManager.levelOffsetX
 
     alignCenter: ->
         @vAlignCenter()
