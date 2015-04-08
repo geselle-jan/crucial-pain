@@ -50,10 +50,6 @@
   </tile>
  </tileset>
  <objectgroup name="walls">
-  <object gid="5" x="276" y="216"/>
-  <object gid="5" x="404" y="216"/>
-  <object gid="5" x="532" y="216"/>
-  <object gid="5" x="660" y="216"/>
   <object gid="3" x="228" y="296"/>
   <object gid="3" x="228" y="456"/>
   <object gid="3" x="228" y="616"/>
@@ -64,21 +60,25 @@
   <object gid="3" x="788" y="296"/>
   <object gid="3" x="788" y="616"/>
   <object gid="3" x="788" y="456"/>
-  <object gid="2" x="532" y="364"/>
-  <object gid="2" x="532" y="504"/>
+  <object gid="3" x="404" y="536"/>
+  <object gid="3" x="612" y="536"/>
  </objectgroup>
  <objectgroup name="entities">
-  <object name="spawn" gid="6" x="364" y="508"/>
-  <object name="goal" gid="7" x="652" y="300"/>
-  <object name="portal" gid="14" x="376" y="312">
-   <properties>
-    <property name="pid" value="1"/>
-   </properties>
-  </object>
-  <object name="portal" gid="14" x="656" y="448">
-   <properties>
-    <property name="pid" value="1"/>
-   </properties>
-  </object>
+  <object name="spawn" gid="6" x="304" y="512"/>
+  <object name="goal" gid="7" x="700" y="500"/>
+  <object name="stopper" gid="9" x="332" y="216"/>
+  <object name="stopper" gid="9" x="376" y="216"/>
+  <object name="stopper" gid="9" x="288" y="216"/>
+  <object name="stopper" gid="9" x="420" y="216"/>
+  <object name="stopper" gid="9" x="508" y="216"/>
+  <object name="stopper" gid="9" x="552" y="216"/>
+  <object name="stopper" gid="9" x="464" y="216"/>
+  <object name="stopper" gid="9" x="596" y="216"/>
+  <object name="stopper" gid="9" x="684" y="216"/>
+  <object name="stopper" gid="9" x="728" y="216"/>
+  <object name="stopper" gid="9" x="640" y="216"/>
+  <object name="stopper" gid="9" x="552" y="444"/>
+  <object name="stopper" gid="9" x="508" y="444"/>
+  <object name="stopper" gid="9" x="464" y="444"/>
  </objectgroup>
 </map>

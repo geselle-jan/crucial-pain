@@ -215,36 +215,6 @@
                  "width":0,
                  "x":788,
                  "y":456
-                }, 
-                {
-                 "gid":2,
-                 "height":0,
-                 "name":"",
-                 "properties":
-                    {
-
-                    },
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":0,
-                 "x":532,
-                 "y":364
-                }, 
-                {
-                 "gid":2,
-                 "height":0,
-                 "name":"",
-                 "properties":
-                    {
-
-                    },
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":0,
-                 "x":532,
-                 "y":504
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -270,8 +240,8 @@
                  "type":"",
                  "visible":true,
                  "width":0,
-                 "x":364,
-                 "y":508
+                 "x":304,
+                 "y":404
                 }, 
                 {
                  "gid":7,
@@ -285,38 +255,38 @@
                  "type":"",
                  "visible":true,
                  "width":0,
-                 "x":652,
-                 "y":300
+                 "x":696,
+                 "y":392
                 }, 
                 {
-                 "gid":14,
+                 "gid":15,
                  "height":0,
-                 "name":"portal",
+                 "name":"movingwall",
                  "properties":
                     {
-                     "pid":"1"
+                     "rangeY":"55"
                     },
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":0,
-                 "x":376,
-                 "y":312
+                 "x":532,
+                 "y":292
                 }, 
                 {
-                 "gid":14,
+                 "gid":15,
                  "height":0,
-                 "name":"portal",
+                 "name":"movingwall",
                  "properties":
                     {
-                     "pid":"1"
+                     "rangeY":"-55"
                     },
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":0,
-                 "x":656,
-                 "y":448
+                 "x":532,
+                 "y":512
                 }],
          "opacity":1,
          "type":"objectgroup",

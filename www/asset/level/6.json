@@ -7,66 +7,6 @@
          "name":"walls",
          "objects":[
                 {
-                 "gid":5,
-                 "height":0,
-                 "name":"",
-                 "properties":
-                    {
-
-                    },
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":0,
-                 "x":276,
-                 "y":216
-                }, 
-                {
-                 "gid":5,
-                 "height":0,
-                 "name":"",
-                 "properties":
-                    {
-
-                    },
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":0,
-                 "x":404,
-                 "y":216
-                }, 
-                {
-                 "gid":5,
-                 "height":0,
-                 "name":"",
-                 "properties":
-                    {
-
-                    },
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":0,
-                 "x":532,
-                 "y":216
-                }, 
-                {
-                 "gid":5,
-                 "height":0,
-                 "name":"",
-                 "properties":
-                    {
-
-                    },
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":0,
-                 "x":660,
-                 "y":216
-                }, 
-                {
                  "gid":3,
                  "height":0,
                  "name":"",
@@ -217,7 +157,7 @@
                  "y":456
                 }, 
                 {
-                 "gid":2,
+                 "gid":3,
                  "height":0,
                  "name":"",
                  "properties":
@@ -228,11 +168,11 @@
                  "type":"",
                  "visible":true,
                  "width":0,
-                 "x":532,
-                 "y":364
+                 "x":404,
+                 "y":536
                 }, 
                 {
-                 "gid":2,
+                 "gid":3,
                  "height":0,
                  "name":"",
                  "properties":
@@ -243,8 +183,8 @@
                  "type":"",
                  "visible":true,
                  "width":0,
-                 "x":532,
-                 "y":504
+                 "x":612,
+                 "y":536
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -270,8 +210,8 @@
                  "type":"",
                  "visible":true,
                  "width":0,
-                 "x":364,
-                 "y":508
+                 "x":304,
+                 "y":512
                 }, 
                 {
                  "gid":7,
@@ -285,38 +225,218 @@
                  "type":"",
                  "visible":true,
                  "width":0,
-                 "x":652,
-                 "y":300
+                 "x":700,
+                 "y":500
                 }, 
                 {
-                 "gid":14,
+                 "gid":9,
                  "height":0,
-                 "name":"portal",
+                 "name":"stopper",
                  "properties":
                     {
-                     "pid":"1"
+
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":332,
+                 "y":216
+                }, 
+                {
+                 "gid":9,
+                 "height":0,
+                 "name":"stopper",
+                 "properties":
+                    {
+
                     },
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":0,
                  "x":376,
-                 "y":312
+                 "y":216
                 }, 
                 {
-                 "gid":14,
+                 "gid":9,
                  "height":0,
-                 "name":"portal",
+                 "name":"stopper",
                  "properties":
                     {
-                     "pid":"1"
+
                     },
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":0,
-                 "x":656,
-                 "y":448
+                 "x":288,
+                 "y":216
+                }, 
+                {
+                 "gid":9,
+                 "height":0,
+                 "name":"stopper",
+                 "properties":
+                    {
+
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":420,
+                 "y":216
+                }, 
+                {
+                 "gid":9,
+                 "height":0,
+                 "name":"stopper",
+                 "properties":
+                    {
+
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":508,
+                 "y":216
+                }, 
+                {
+                 "gid":9,
+                 "height":0,
+                 "name":"stopper",
+                 "properties":
+                    {
+
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":552,
+                 "y":216
+                }, 
+                {
+                 "gid":9,
+                 "height":0,
+                 "name":"stopper",
+                 "properties":
+                    {
+
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":464,
+                 "y":216
+                }, 
+                {
+                 "gid":9,
+                 "height":0,
+                 "name":"stopper",
+                 "properties":
+                    {
+
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":596,
+                 "y":216
+                }, 
+                {
+                 "gid":9,
+                 "height":0,
+                 "name":"stopper",
+                 "properties":
+                    {
+
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":684,
+                 "y":216
+                }, 
+                {
+                 "gid":9,
+                 "height":0,
+                 "name":"stopper",
+                 "properties":
+                    {
+
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":728,
+                 "y":216
+                }, 
+                {
+                 "gid":9,
+                 "height":0,
+                 "name":"stopper",
+                 "properties":
+                    {
+
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":640,
+                 "y":216
+                }, 
+                {
+                 "gid":9,
+                 "height":0,
+                 "name":"stopper",
+                 "properties":
+                    {
+
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":552,
+                 "y":444
+                }, 
+                {
+                 "gid":9,
+                 "height":0,
+                 "name":"stopper",
+                 "properties":
+                    {
+
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":508,
+                 "y":444
+                }, 
+                {
+                 "gid":9,
+                 "height":0,
+                 "name":"stopper",
+                 "properties":
+                    {
+
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":464,
+                 "y":444
                 }],
          "opacity":1,
          "type":"objectgroup",

@@ -17,7 +17,7 @@
    <image width="122" height="74" source="../editor-images/wall_3x1.png"/>
   </tile>
  </tileset>
- <tileset firstgid="6" name="enitities" tilewidth="65" tileheight="65">
+ <tileset firstgid="6" name="enitities" tilewidth="239" tileheight="265">
   <tile id="0">
    <image width="65" height="65" source="../editor-images/puck.png"/>
   </tile>
@@ -27,44 +27,46 @@
   <tile id="2">
    <image width="38" height="38" source="../editor-images/crab.png"/>
   </tile>
+  <tile id="3">
+   <image width="39" height="73" source="../editor-images/stopper.png"/>
+  </tile>
+  <tile id="4">
+   <image width="239" height="73" source="../editor-images/gateHorizontal.png"/>
+  </tile>
+  <tile id="5">
+   <image width="42" height="265" source="../editor-images/gateVertical.png"/>
+  </tile>
+  <tile id="6">
+   <image width="38" height="38" source="../editor-images/hermit.png"/>
+  </tile>
+  <tile id="7">
+   <image width="40" height="40" source="../editor-images/1up.png"/>
+  </tile>
+  <tile id="8">
+   <image width="40" height="40" source="../editor-images/portal.png"/>
+  </tile>
+  <tile id="9">
+   <image width="40" height="66" source="../editor-images/movingwall.png"/>
+  </tile>
  </tileset>
  <objectgroup name="walls">
-  <object gid="1" x="16" y="80"/>
-  <object gid="1" x="4" y="156"/>
-  <object gid="1" x="4" y="232"/>
-  <object gid="3" x="4" y="389"/>
-  <object gid="3" x="4" y="547"/>
-  <object gid="3" x="4" y="704"/>
-  <object gid="4" x="48" y="764"/>
-  <object gid="4" x="132" y="764"/>
-  <object gid="4" x="216" y="764"/>
-  <object gid="4" x="300" y="764"/>
-  <object gid="4" x="384" y="764"/>
-  <object gid="4" x="468" y="764"/>
-  <object gid="4" x="552" y="764"/>
-  <object gid="5" x="636" y="764"/>
-  <object gid="5" x="760" y="764"/>
-  <object gid="1" x="884" y="764"/>
-  <object gid="1" x="884" y="688"/>
-  <object gid="3" x="884" y="612"/>
-  <object gid="3" x="884" y="456"/>
-  <object gid="3" x="884" y="300"/>
-  <object gid="2" x="884" y="144"/>
-  <object gid="5" x="64" y="80"/>
-  <object gid="5" x="196" y="80"/>
-  <object gid="5" x="324" y="80"/>
-  <object gid="5" x="452" y="80"/>
-  <object gid="5" x="580" y="80"/>
-  <object gid="5" x="708" y="80"/>
-  <object gid="1" x="836" y="80"/>
+  <object gid="5" x="276" y="216"/>
+  <object gid="5" x="404" y="216"/>
+  <object gid="5" x="532" y="216"/>
+  <object gid="5" x="660" y="216"/>
+  <object gid="3" x="228" y="296"/>
+  <object gid="3" x="228" y="456"/>
+  <object gid="3" x="228" y="616"/>
+  <object gid="5" x="660" y="616"/>
+  <object gid="5" x="276" y="616"/>
+  <object gid="5" x="404" y="616"/>
+  <object gid="5" x="532" y="616"/>
+  <object gid="3" x="788" y="296"/>
+  <object gid="3" x="788" y="616"/>
+  <object gid="3" x="788" y="456"/>
  </objectgroup>
  <objectgroup name="entities">
-  <object name="spawn" gid="6" x="116" y="376"/>
-  <object name="goal" gid="7" x="724" y="364"/>
-  <object name="crab" gid="8" x="444" y="284">
-   <properties>
-    <property name="rangeY" value="160"/>
-   </properties>
-  </object>
+  <object name="spawn" gid="6" x="304" y="404"/>
+  <object name="goal" gid="7" x="696" y="392"/>
  </objectgroup>
 </map>

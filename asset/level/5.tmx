@@ -64,20 +64,14 @@
   <object gid="3" x="788" y="296"/>
   <object gid="3" x="788" y="616"/>
   <object gid="3" x="788" y="456"/>
-  <object gid="2" x="532" y="364"/>
-  <object gid="2" x="532" y="504"/>
  </objectgroup>
  <objectgroup name="entities">
-  <object name="spawn" gid="6" x="364" y="508"/>
-  <object name="goal" gid="7" x="652" y="300"/>
-  <object name="portal" gid="14" x="376" y="312">
+  <object name="spawn" gid="6" x="304" y="404"/>
+  <object name="goal" gid="7" x="696" y="392"/>
+  <object name="gateVertical" gid="11" x="508" y="512">
    <properties>
-    <property name="pid" value="1"/>
-   </properties>
-  </object>
-  <object name="portal" gid="14" x="656" y="448">
-   <properties>
-    <property name="pid" value="1"/>
+    <property name="timeClosed" value="2000"/>
+    <property name="timeOpened" value="2000"/>
    </properties>
   </object>
  </objectgroup>

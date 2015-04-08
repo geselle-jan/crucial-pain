@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" renderorder="right-down" width="128" height="96" tilewidth="16" tileheight="16" backgroundcolor="#404040">
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="64" height="48" tilewidth="16" tileheight="16" backgroundcolor="#404040">
  <tileset firstgid="1" name="walls" tilewidth="122" tileheight="154">
   <tile id="0">
    <image width="42" height="73" source="../editor-images/wall_1x1.png"/>
@@ -50,146 +50,27 @@
   </tile>
  </tileset>
  <objectgroup name="walls">
-  <object gid="1" x="16" y="80"/>
-  <object gid="1" x="4" y="156"/>
-  <object gid="1" x="4" y="232"/>
-  <object gid="3" x="4" y="389"/>
-  <object gid="3" x="4" y="547"/>
-  <object gid="3" x="4" y="704"/>
-  <object gid="4" x="884" y="80"/>
-  <object gid="4" x="968" y="80"/>
-  <object gid="4" x="1052" y="80"/>
-  <object gid="4" x="1136" y="80"/>
-  <object gid="4" x="1220" y="80"/>
-  <object gid="4" x="1304" y="80"/>
-  <object gid="4" x="1388" y="80"/>
-  <object gid="5" x="1472" y="80"/>
-  <object gid="5" x="1596" y="80"/>
-  <object gid="1" x="1720" y="80"/>
-  <object gid="1" x="4" y="1364"/>
-  <object gid="3" x="4" y="1288"/>
-  <object gid="3" x="4" y="1132"/>
-  <object gid="3" x="4" y="976"/>
-  <object gid="2" x="4" y="820"/>
-  <object gid="5" x="64" y="80"/>
-  <object gid="5" x="196" y="80"/>
-  <object gid="5" x="324" y="80"/>
-  <object gid="5" x="452" y="80"/>
-  <object gid="5" x="580" y="80"/>
-  <object gid="5" x="708" y="80"/>
-  <object gid="1" x="836" y="80"/>
-  <object gid="1" x="4" y="1452"/>
-  <object gid="4" x="1040" y="1452"/>
-  <object gid="4" x="1124" y="1452"/>
-  <object gid="4" x="1292" y="1452"/>
-  <object gid="4" x="1208" y="1452"/>
-  <object gid="4" x="1376" y="1452"/>
-  <object gid="1" x="1708" y="1452"/>
-  <object gid="5" x="1460" y="1452"/>
-  <object gid="5" x="1584" y="1452"/>
-  <object gid="5" x="184" y="1452"/>
-  <object gid="5" x="52" y="1452"/>
-  <object gid="5" x="568" y="1452"/>
-  <object gid="5" x="312" y="1452"/>
-  <object gid="1" x="824" y="1452"/>
-  <object gid="5" x="440" y="1452"/>
-  <object gid="5" x="696" y="1452"/>
-  <object gid="4" x="956" y="1452"/>
-  <object gid="4" x="872" y="1452"/>
-  <object gid="1" x="1736" y="160"/>
-  <object gid="1" x="1736" y="1368"/>
-  <object gid="3" x="1736" y="551"/>
-  <object gid="3" x="1736" y="708"/>
-  <object gid="3" x="1736" y="980"/>
-  <object gid="1" x="1736" y="236"/>
-  <object gid="3" x="1736" y="1292"/>
-  <object gid="3" x="1736" y="393"/>
-  <object gid="3" x="1736" y="1136"/>
-  <object gid="2" x="1736" y="824"/>
-  <object gid="3" x="412" y="240"/>
-  <object gid="3" x="412" y="400"/>
-  <object gid="4" x="380" y="752"/>
-  <object gid="1" x="52" y="460"/>
-  <object gid="1" x="52" y="612"/>
-  <object gid="4" x="48" y="752"/>
+  <object gid="5" x="276" y="216"/>
+  <object gid="5" x="404" y="216"/>
+  <object gid="5" x="532" y="216"/>
+  <object gid="5" x="660" y="216"/>
+  <object gid="3" x="228" y="296"/>
+  <object gid="3" x="228" y="456"/>
+  <object gid="3" x="228" y="616"/>
+  <object gid="5" x="660" y="616"/>
+  <object gid="5" x="276" y="616"/>
+  <object gid="5" x="404" y="616"/>
+  <object gid="5" x="532" y="616"/>
+  <object gid="3" x="788" y="296"/>
+  <object gid="3" x="788" y="616"/>
+  <object gid="3" x="788" y="456"/>
+  <object gid="2" x="484" y="536"/>
+  <object gid="5" x="484" y="416"/>
  </objectgroup>
  <objectgroup name="entities">
-  <object name="spawn" gid="6" x="216" y="264"/>
-  <object name="goal" gid="7" x="1484" y="1248"/>
-  <object name="stopper" gid="9" x="56" y="536"/>
-  <object name="stopper" gid="9" x="1684" y="1292"/>
-  <object name="stopper" gid="9" x="1684" y="1368"/>
-  <object name="stopper" gid="9" x="1684" y="1140"/>
-  <object name="stopper" gid="9" x="1640" y="1368"/>
-  <object name="stopper" gid="9" x="1596" y="1368"/>
-  <object name="stopper" gid="9" x="1552" y="1368"/>
-  <object name="stopper" gid="9" x="1508" y="1368"/>
-  <object name="stopper" gid="9" x="1464" y="1368"/>
-  <object name="stopper" gid="9" x="1684" y="1216"/>
-  <object name="stopper" gid="9" x="1420" y="1368"/>
-  <object name="stopper" gid="9" x="1552" y="1140"/>
-  <object name="stopper" gid="9" x="1420" y="1140"/>
-  <object name="stopper" gid="9" x="1640" y="1140"/>
-  <object name="stopper" gid="9" x="1596" y="1140"/>
-  <object name="stopper" gid="9" x="1464" y="1140"/>
-  <object name="stopper" gid="9" x="1376" y="1140"/>
-  <object name="stopper" gid="9" x="1508" y="1140"/>
-  <object name="stopper" gid="9" x="1376" y="1292"/>
-  <object name="stopper" gid="9" x="1376" y="1368"/>
-  <object name="stopper" gid="9" x="1376" y="1216"/>
-  <object name="gateHorizontal" gid="10" x="136" y="752">
-   <properties>
-    <property name="timeClosed" value="5000"/>
-    <property name="timeOpened" value="2000"/>
-   </properties>
-  </object>
-  <object name="gateVertical" gid="11" x="412" y="672">
-   <properties>
-    <property name="timeClosed" value="8000"/>
-    <property name="timeOpened" value="500"/>
-   </properties>
-  </object>
-  <object name="crab" gid="8" x="72" y="996">
-   <properties>
-    <property name="rangeX" value="340"/>
-    <property name="speed" value="1"/>
-   </properties>
-  </object>
-  <object name="hermit" gid="12" x="596" y="848">
-   <properties>
-    <property name="rangeY" value="310"/>
-    <property name="speed" value="2"/>
-   </properties>
-  </object>
-  <object name="portal" gid="14" x="1548" y="248">
-   <properties>
-    <property name="pid" value="1"/>
-   </properties>
-  </object>
-  <object name="portal" gid="14" x="1592" y="1232">
-   <properties>
-    <property name="pid" value="1"/>
-   </properties>
-  </object>
-  <object name="oneup" gid="13" x="1296" y="1216"/>
-  <object name="oneup" gid="13" x="488" y="168"/>
-  <object name="movingwall" gid="15" x="704" y="196">
-   <properties>
-    <property name="rangeY" value="400"/>
-   </properties>
-  </object>
-  <object name="movingwall" gid="15" x="832" y="724">
-   <properties>
-    <property name="rangeX" value="-320"/>
-    <property name="speed" value="2"/>
-   </properties>
-  </object>
-  <object name="stopper" gid="9" x="1128" y="484"/>
-  <object name="crab" gid="8" x="1332" y="680">
-   <properties>
-    <property name="rangeX" value="-360"/>
-   </properties>
-  </object>
-  <object name="oneup" gid="13" x="316" y="1288"/>
+  <object name="spawn" gid="6" x="304" y="504"/>
+  <object name="goal" gid="7" x="644" y="392"/>
+  <object name="oneup" gid="13" x="608" y="296"/>
+  <object name="oneup" gid="13" x="708" y="296"/>
  </objectgroup>
 </map>
