@@ -228,7 +228,7 @@
                  "type":"",
                  "visible":true,
                  "width":0,
-                 "x":484,
+                 "x":404,
                  "y":536
                 }, 
                 {
@@ -243,7 +243,37 @@
                  "type":"",
                  "visible":true,
                  "width":0,
-                 "x":484,
+                 "x":404,
+                 "y":416
+                }, 
+                {
+                 "gid":5,
+                 "height":0,
+                 "name":"",
+                 "properties":
+                    {
+
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":532,
+                 "y":416
+                }, 
+                {
+                 "gid":4,
+                 "height":0,
+                 "name":"",
+                 "properties":
+                    {
+
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":660,
                  "y":416
                 }],
          "opacity":1,
@@ -270,8 +300,8 @@
                  "type":"",
                  "visible":true,
                  "width":0,
-                 "x":304,
-                 "y":504
+                 "x":308,
+                 "y":532
                 }, 
                 {
                  "gid":7,
@@ -285,22 +315,7 @@
                  "type":"",
                  "visible":true,
                  "width":0,
-                 "x":644,
-                 "y":392
-                }, 
-                {
-                 "gid":13,
-                 "height":0,
-                 "name":"oneup",
-                 "properties":
-                    {
-
-                    },
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":0,
-                 "x":608,
+                 "x":696,
                  "y":296
                 }, 
                 {
@@ -315,7 +330,7 @@
                  "type":"",
                  "visible":true,
                  "width":0,
-                 "x":708,
+                 "x":568,
                  "y":296
                 }],
          "opacity":1,

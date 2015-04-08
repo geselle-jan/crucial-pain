@@ -64,13 +64,14 @@
   <object gid="3" x="788" y="296"/>
   <object gid="3" x="788" y="616"/>
   <object gid="3" x="788" y="456"/>
-  <object gid="2" x="484" y="536"/>
-  <object gid="5" x="484" y="416"/>
+  <object gid="2" x="404" y="536"/>
+  <object gid="5" x="404" y="416"/>
+  <object gid="5" x="532" y="416"/>
+  <object gid="4" x="660" y="416"/>
  </objectgroup>
  <objectgroup name="entities">
-  <object name="spawn" gid="6" x="304" y="504"/>
-  <object name="goal" gid="7" x="644" y="392"/>
-  <object name="oneup" gid="13" x="608" y="296"/>
-  <object name="oneup" gid="13" x="708" y="296"/>
+  <object name="spawn" gid="6" x="308" y="532"/>
+  <object name="goal" gid="7" x="696" y="296"/>
+  <object name="oneup" gid="13" x="568" y="296"/>
  </objectgroup>
 </map>
