@@ -3,7 +3,6 @@ class Level
 	constructor: (options = {}) ->
 		@index = options.index ? 1
 		@map = @createMap()
-		@setBounds()
 		@walls = @createWalls()
 		@goal = @createGoal()
 		@walkers = @createWalkers()
@@ -11,12 +10,13 @@ class Level
 		@oneUps = @createOneUps()
 		@portals = @createPortals()
 		@gates = @createGates()
+		@setBounds()
 
 	createMap: ->
 		game.add.tilemap '' + @index + ''
 
 	setBounds: ->
-		game.world.setBounds scaleManager.levelOffsetX * -1, scaleManager.levelOffsetY * -1, @map.widthInPixels + scaleManager.levelOffsetX, @map.heightInPixels + scaleManager.levelOffsetY
+		game.world.setBounds 0, 0, @map.widthInPixels + scaleManager.levelOffsetX * 2, @map.heightInPixels + scaleManager.levelOffsetY * 2
 
 	createWalls: ->
 		walls = []
@@ -24,8 +24,8 @@ class Level
 		for entry in data
 			wallSize = @getWallSize entry
 			wall = new Wall(
-				x: entry.x
-				y: entry.y
+				x: entry.x + scaleManager.levelOffsetX
+				y: entry.y + scaleManager.levelOffsetY
 				width: wallSize.width
 				height: wallSize.height)
 			wall.sprite.position.y = wall.sprite.position.y - wall.sprite.body.height
@@ -68,8 +68,8 @@ class Level
 				speed = entity.properties?.speed ? 1
 				speed = speed * 1
 				walkers.push new entityClass(
-					x: entity.x
-					y: entity.y
+					x: entity.x + scaleManager.levelOffsetX
+					y: entity.y + scaleManager.levelOffsetY
 					rangeX: rangeX
 					rangeY: rangeY
 					speed: speed)
@@ -81,8 +81,8 @@ class Level
 		for entity in data
 			if entity.name is 'stopper'
 				stoppers.push new Stopper(
-					x: entity.x
-					y: entity.y)
+					x: entity.x + scaleManager.levelOffsetX
+					y: entity.y + scaleManager.levelOffsetY)
 		stoppers
 
 	createGates: ->
@@ -95,8 +95,8 @@ class Level
 				timeOpened = entity.properties?.timeOpened ? 0
 				timeOpened = timeOpened * 1
 				gates.push new Gate(
-					x: entity.x
-					y: entity.y
+					x: entity.x + scaleManager.levelOffsetX
+					y: entity.y + scaleManager.levelOffsetY
 					timeClosed: timeClosed
 					timeOpened: timeOpened
 					orientation: 'horizontal')
@@ -107,8 +107,8 @@ class Level
 				timeOpened = entity.properties?.timeOpened ? 0
 				timeOpened = timeOpened * 1
 				gates.push new Gate(
-					x: entity.x
-					y: entity.y
+					x: entity.x + scaleManager.levelOffsetX
+					y: entity.y + scaleManager.levelOffsetY
 					timeClosed: timeClosed
 					timeOpened: timeOpened
 					orientation: 'vertical')
@@ -119,7 +119,7 @@ class Level
 		data = @map.objects.entities
 		for entity in data
 			if entity.name is 'spawn'
-				spawn = new Phaser.Point entity.x, entity.y - sprite.body.height
+				spawn = new Phaser.Point entity.x + scaleManager.levelOffsetX, entity.y + scaleManager.levelOffsetY - sprite.body.height
 		unless spawn
 			spawn = new Phaser.Point 0, 0
 		spawn
@@ -130,8 +130,8 @@ class Level
 		for entity in data
 			if entity.name is 'oneup'
 				oneUps.push new OneUp(
-					x: entity.x
-					y: entity.y)
+					x: entity.x + scaleManager.levelOffsetX
+					y: entity.y + scaleManager.levelOffsetY)
 		oneUps
 
 	createPortals: ->
@@ -142,8 +142,8 @@ class Level
 				pid = entity.properties?.pid ? 0
 				pid = pid * 1
 				portals.push new Portal(
-					x: entity.x
-					y: entity.y
+					x: entity.x + scaleManager.levelOffsetX
+					y: entity.y + scaleManager.levelOffsetY
 					pid: pid)
 		portals
 
@@ -153,8 +153,8 @@ class Level
 		for entity in data
 			if entity.name is 'goal'
 				goal = new Goal(
-					x: entity.x
-					y: entity.y)
+					x: entity.x + scaleManager.levelOffsetX
+					y: entity.y + scaleManager.levelOffsetY)
 		goal
 
 	update: ->
