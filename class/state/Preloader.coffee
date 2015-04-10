@@ -47,6 +47,7 @@ CrucialPain.Preloader.prototype =
         @load.spritesheet 'gate_W_front', 'asset/sprites/gate_W_front.png', 48, 96
         @load.spritesheet 'gate_E_front', 'asset/sprites/gate_E_front.png', 48, 96
 
+        #@load.tilemap '1', 'asset/level/14.json', null, Phaser.Tilemap.TILED_JSON
         @load.tilemap '1', 'asset/level/1.json', null, Phaser.Tilemap.TILED_JSON
         @load.tilemap '2', 'asset/level/2.json', null, Phaser.Tilemap.TILED_JSON
         @load.tilemap '3', 'asset/level/3.json', null, Phaser.Tilemap.TILED_JSON
@@ -56,6 +57,10 @@ CrucialPain.Preloader.prototype =
         @load.tilemap '7', 'asset/level/7.json', null, Phaser.Tilemap.TILED_JSON
         @load.tilemap '8', 'asset/level/8.json', null, Phaser.Tilemap.TILED_JSON
         @load.tilemap '9', 'asset/level/9.json', null, Phaser.Tilemap.TILED_JSON
+        @load.tilemap '10', 'asset/level/10.json', null, Phaser.Tilemap.TILED_JSON
+        @load.tilemap '11', 'asset/level/11.json', null, Phaser.Tilemap.TILED_JSON
+        @load.tilemap '12', 'asset/level/12.json', null, Phaser.Tilemap.TILED_JSON
+        @load.tilemap '13', 'asset/level/13.json', null, Phaser.Tilemap.TILED_JSON
 
         @load.bitmapFont 'silkscreen', 'asset/fonts/silkscreen/silkscreen.png', 'asset/fonts/silkscreen/silkscreen.fnt'
         return

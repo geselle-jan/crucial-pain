@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="64" height="48" tilewidth="16" tileheight="16" backgroundcolor="#404040">
+ <tileset firstgid="1" name="walls" tilewidth="122" tileheight="154">
+  <tile id="0">
+   <image width="42" height="73" source="../editor-images/wall_1x1.png"/>
+  </tile>
+  <tile id="1">
+   <image width="42" height="114" source="../editor-images/wall_1x2.png"/>
+  </tile>
+  <tile id="2">
+   <image width="42" height="154" source="../editor-images/wall_1x3.png"/>
+  </tile>
+  <tile id="3">
+   <image width="83" height="74" source="../editor-images/wall_2x1.png"/>
+  </tile>
+  <tile id="4">
+   <image width="122" height="74" source="../editor-images/wall_3x1.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="6" name="enitities" tilewidth="239" tileheight="265">
+  <tile id="0">
+   <image width="65" height="65" source="../editor-images/puck.png"/>
+  </tile>
+  <tile id="1">
+   <image width="40" height="40" source="../editor-images/goal.png"/>
+  </tile>
+  <tile id="2">
+   <image width="38" height="38" source="../editor-images/crab.png"/>
+  </tile>
+  <tile id="3">
+   <image width="39" height="73" source="../editor-images/stopper.png"/>
+  </tile>
+  <tile id="4">
+   <image width="239" height="73" source="../editor-images/gateHorizontal.png"/>
+  </tile>
+  <tile id="5">
+   <image width="42" height="265" source="../editor-images/gateVertical.png"/>
+  </tile>
+  <tile id="6">
+   <image width="38" height="38" source="../editor-images/hermit.png"/>
+  </tile>
+  <tile id="7">
+   <image width="40" height="40" source="../editor-images/1up.png"/>
+  </tile>
+  <tile id="8">
+   <image width="40" height="40" source="../editor-images/portal.png"/>
+  </tile>
+  <tile id="9">
+   <image width="40" height="66" source="../editor-images/movingwall.png"/>
+  </tile>
+ </tileset>
+ <objectgroup name="walls">
+  <object gid="5" x="68" y="100"/>
+  <object gid="5" x="196" y="100"/>
+  <object gid="5" x="324" y="100"/>
+  <object gid="5" x="452" y="100"/>
+  <object gid="3" x="532" y="260"/>
+  <object gid="3" x="532" y="420"/>
+  <object gid="3" x="532" y="580"/>
+  <object gid="3" x="532" y="740"/>
+  <object gid="5" x="580" y="100"/>
+  <object gid="5" x="708" y="100"/>
+  <object gid="5" x="836" y="100"/>
+  <object gid="3" x="20" y="500"/>
+  <object gid="3" x="20" y="340"/>
+  <object gid="3" x="20" y="660"/>
+  <object gid="3" x="20" y="180"/>
+  <object gid="3" x="964" y="500"/>
+  <object gid="3" x="964" y="340"/>
+  <object gid="3" x="964" y="660"/>
+  <object gid="3" x="964" y="180"/>
+  <object gid="5" x="404" y="740"/>
+  <object gid="5" x="20" y="740"/>
+  <object gid="5" x="148" y="740"/>
+  <object gid="5" x="276" y="740"/>
+  <object gid="5" x="580" y="740"/>
+  <object gid="5" x="708" y="740"/>
+  <object gid="5" x="836" y="740"/>
+  <object gid="1" x="964" y="740"/>
+  <object gid="5" x="72" y="340"/>
+  <object gid="5" x="400" y="340"/>
+  <object gid="4" x="208" y="340"/>
+  <object gid="4" x="304" y="340"/>
+  <object gid="5" x="584" y="420"/>
+ </objectgroup>
+ <objectgroup name="entities">
+  <object name="spawn" gid="6" x="120" y="220"/>
+  <object name="portal" gid="14" x="424" y="208">
+   <properties>
+    <property name="pid" value="1"/>
+   </properties>
+  </object>
+  <object name="portal" gid="14" x="288" y="500">
+   <properties>
+    <property name="pid" value="1"/>
+   </properties>
+  </object>
+  <object name="stopper" gid="9" x="584" y="180"/>
+  <object name="stopper" gid="9" x="584" y="260"/>
+  <object name="crab" gid="8" x="424" y="412">
+   <properties>
+    <property name="rangeY" value="230"/>
+    <property name="speed" value="1"/>
+   </properties>
+  </object>
+  <object name="portal" gid="14" x="800" y="204">
+   <properties>
+    <property name="pid" value="2"/>
+   </properties>
+  </object>
+  <object name="portal" gid="14" x="112" y="500">
+   <properties>
+    <property name="pid" value="2"/>
+   </properties>
+  </object>
+  <object name="movingwall" gid="15" x="208" y="640">
+   <properties>
+    <property name="rangeY" value="-160"/>
+    <property name="speed" value="1"/>
+   </properties>
+  </object>
+  <object name="goal" gid="7" x="632" y="608"/>
+ </objectgroup>
+</map>
