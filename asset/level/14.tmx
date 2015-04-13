@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" renderorder="right-down" width="96" height="48" tilewidth="16" tileheight="16" backgroundcolor="#404040">
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="64" height="48" tilewidth="16" tileheight="16" backgroundcolor="#404040">
  <tileset firstgid="1" name="walls" tilewidth="122" tileheight="154">
   <tile id="0">
    <image width="42" height="73" source="../editor-images/wall_1x1.png"/>
@@ -50,43 +50,43 @@
   </tile>
  </tileset>
  <objectgroup name="walls">
-  <object gid="3" x="44" y="608"/>
-  <object gid="3" x="44" y="452"/>
-  <object gid="3" x="44" y="296"/>
-  <object gid="5" x="88" y="216"/>
-  <object gid="5" x="212" y="216"/>
-  <object gid="5" x="336" y="216"/>
-  <object gid="5" x="460" y="216"/>
-  <object gid="5" x="584" y="216"/>
-  <object gid="5" x="708" y="216"/>
-  <object gid="5" x="832" y="216"/>
-  <object gid="3" x="1452" y="452"/>
-  <object gid="3" x="1452" y="608"/>
-  <object gid="3" x="1080" y="296"/>
-  <object gid="5" x="336" y="608"/>
-  <object gid="5" x="584" y="608"/>
-  <object gid="5" x="460" y="608"/>
-  <object gid="5" x="832" y="608"/>
-  <object gid="5" x="212" y="608"/>
-  <object gid="5" x="88" y="608"/>
-  <object gid="5" x="708" y="608"/>
-  <object gid="5" x="956" y="216"/>
-  <object gid="5" x="1080" y="608"/>
-  <object gid="5" x="956" y="608"/>
-  <object gid="5" x="1328" y="608"/>
-  <object gid="5" x="1204" y="608"/>
-  <object gid="1" x="332" y="296"/>
-  <object gid="1" x="332" y="392"/>
-  <object gid="1" x="708" y="428"/>
-  <object gid="1" x="708" y="524"/>
-  <object gid="5" x="1080" y="372"/>
-  <object gid="5" x="1204" y="372"/>
-  <object gid="5" x="1328" y="372"/>
+  <object gid="3" x="372" y="424"/>
+  <object gid="3" x="576" y="424"/>
+  <object gid="5" x="372" y="500"/>
+  <object gid="3" x="576" y="268"/>
+  <object gid="5" x="372" y="112"/>
+  <object gid="5" x="496" y="112"/>
+  <object gid="5" x="248" y="112"/>
+  <object gid="3" x="204" y="504"/>
+  <object gid="3" x="204" y="660"/>
+  <object gid="5" x="204" y="736"/>
+  <object gid="5" x="328" y="736"/>
+  <object gid="3" x="792" y="348"/>
+  <object gid="3" x="792" y="504"/>
+  <object gid="1" x="540" y="736"/>
+  <object gid="1" x="452" y="736"/>
+  <object gid="4" x="540" y="500"/>
+  <object gid="4" x="584" y="736"/>
+  <object gid="4" x="668" y="736"/>
+  <object gid="4" x="752" y="736"/>
+  <object gid="5" x="620" y="112"/>
+  <object gid="1" x="792" y="188"/>
+  <object gid="4" x="748" y="112"/>
  </objectgroup>
  <objectgroup name="entities">
-  <object name="spawn" gid="6" x="136" y="312"/>
-  <object name="goal" gid="7" x="1332" y="472"/>
-  <object name="stopper" gid="9" x="768" y="428"/>
-  <object name="stopper" gid="9" x="768" y="520"/>
+  <object name="spawn" gid="6" x="452" y="396"/>
+  <object name="goal" gid="7" x="684" y="224"/>
+  <object name="gateVertical" gid="11" x="496" y="720">
+   <properties>
+    <property name="timeClosed" value="200"/>
+    <property name="timeOpened" value="1800"/>
+   </properties>
+  </object>
+  <object name="stopper" gid="9" x="204" y="192"/>
+  <object name="stopper" gid="9" x="788" y="580"/>
+  <object name="stopper" gid="9" x="788" y="656"/>
+  <object name="stopper" gid="9" x="204" y="116"/>
+  <object name="stopper" gid="9" x="204" y="344"/>
+  <object name="stopper" gid="9" x="204" y="268"/>
  </objectgroup>
 </map>

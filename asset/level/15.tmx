@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" renderorder="right-down" width="128" height="48" tilewidth="16" tileheight="16" backgroundcolor="#404040">
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="96" height="48" tilewidth="16" tileheight="16" backgroundcolor="#404040">
  <tileset firstgid="1" name="walls" tilewidth="122" tileheight="154">
   <tile id="0">
    <image width="42" height="73" source="../editor-images/wall_1x1.png"/>
@@ -50,255 +50,43 @@
   </tile>
  </tileset>
  <objectgroup name="walls">
-  <object gid="3" x="120" y="281"/>
-  <object gid="3" x="1460" y="540"/>
-  <object gid="3" x="1460" y="712"/>
-  <object gid="1" x="1532" y="752"/>
-  <object gid="1" x="1600" y="752"/>
-  <object gid="1" x="1664" y="752"/>
+  <object gid="3" x="44" y="608"/>
+  <object gid="3" x="44" y="452"/>
+  <object gid="3" x="44" y="296"/>
+  <object gid="5" x="88" y="216"/>
+  <object gid="5" x="212" y="216"/>
+  <object gid="5" x="336" y="216"/>
+  <object gid="5" x="460" y="216"/>
+  <object gid="5" x="584" y="216"/>
+  <object gid="5" x="708" y="216"/>
+  <object gid="5" x="832" y="216"/>
+  <object gid="3" x="1452" y="452"/>
+  <object gid="3" x="1452" y="608"/>
+  <object gid="3" x="1080" y="296"/>
+  <object gid="5" x="336" y="608"/>
+  <object gid="5" x="584" y="608"/>
+  <object gid="5" x="460" y="608"/>
+  <object gid="5" x="832" y="608"/>
+  <object gid="5" x="212" y="608"/>
+  <object gid="5" x="88" y="608"/>
+  <object gid="5" x="708" y="608"/>
+  <object gid="5" x="956" y="216"/>
+  <object gid="5" x="1080" y="608"/>
+  <object gid="5" x="956" y="608"/>
+  <object gid="5" x="1328" y="608"/>
+  <object gid="5" x="1204" y="608"/>
+  <object gid="1" x="332" y="296"/>
+  <object gid="1" x="332" y="392"/>
+  <object gid="1" x="708" y="428"/>
+  <object gid="1" x="708" y="524"/>
+  <object gid="5" x="1080" y="372"/>
+  <object gid="5" x="1204" y="372"/>
+  <object gid="5" x="1328" y="372"/>
  </objectgroup>
  <objectgroup name="entities">
-  <object name="spawn" gid="6" x="220" y="237"/>
-  <object name="goal" gid="7" x="1592" y="612"/>
-  <object name="movingwall" gid="15" x="180" y="90">
-   <properties>
-    <property name="rangeX" value="-50"/>
-   </properties>
-  </object>
-  <object name="movingwall" gid="15" x="260" y="90">
-   <properties>
-    <property name="rangeX" value="-50"/>
-   </properties>
-  </object>
-  <object name="movingwall" gid="15" x="340" y="90">
-   <properties>
-    <property name="rangeX" value="-50"/>
-   </properties>
-  </object>
-  <object name="movingwall" gid="15" x="420" y="90">
-   <properties>
-    <property name="rangeX" value="-50"/>
-   </properties>
-  </object>
-  <object name="movingwall" gid="15" x="500" y="90">
-   <properties>
-    <property name="rangeX" value="-50"/>
-   </properties>
-  </object>
-  <object name="movingwall" gid="15" x="580" y="90">
-   <properties>
-    <property name="rangeX" value="-50"/>
-   </properties>
-  </object>
-  <object name="movingwall" gid="15" x="660" y="90">
-   <properties>
-    <property name="rangeX" value="-50"/>
-   </properties>
-  </object>
-  <object name="movingwall" gid="15" x="820" y="90">
-   <properties>
-    <property name="rangeX" value="-50"/>
-   </properties>
-  </object>
-  <object name="movingwall" gid="15" x="740" y="90">
-   <properties>
-    <property name="rangeX" value="-50"/>
-   </properties>
-  </object>
-  <object name="movingwall" gid="15" x="900" y="90">
-   <properties>
-    <property name="rangeX" value="-50"/>
-   </properties>
-  </object>
-  <object name="movingwall" gid="15" x="1220" y="90">
-   <properties>
-    <property name="rangeX" value="-50"/>
-   </properties>
-  </object>
-  <object name="movingwall" gid="15" x="1460" y="90">
-   <properties>
-    <property name="rangeX" value="-50"/>
-   </properties>
-  </object>
-  <object name="movingwall" gid="15" x="1380" y="90">
-   <properties>
-    <property name="rangeX" value="-50"/>
-   </properties>
-  </object>
-  <object name="movingwall" gid="15" x="1140" y="90">
-   <properties>
-    <property name="rangeX" value="-50"/>
-   </properties>
-  </object>
-  <object name="movingwall" gid="15" x="1300" y="90">
-   <properties>
-    <property name="rangeX" value="-50"/>
-   </properties>
-  </object>
-  <object name="movingwall" gid="15" x="980" y="90">
-   <properties>
-    <property name="rangeX" value="-50"/>
-   </properties>
-  </object>
-  <object name="movingwall" gid="15" x="1060" y="90">
-   <properties>
-    <property name="rangeX" value="-50"/>
-   </properties>
-  </object>
-  <object name="movingwall" gid="15" x="420" y="373">
-   <properties>
-    <property name="rangeX" value="50"/>
-   </properties>
-  </object>
-  <object name="movingwall" gid="15" x="260" y="373">
-   <properties>
-    <property name="rangeX" value="50"/>
-   </properties>
-  </object>
-  <object name="movingwall" gid="15" x="180" y="373">
-   <properties>
-    <property name="rangeX" value="50"/>
-   </properties>
-  </object>
-  <object name="movingwall" gid="15" x="340" y="373">
-   <properties>
-    <property name="rangeX" value="50"/>
-   </properties>
-  </object>
-  <object name="movingwall" gid="15" x="660" y="373">
-   <properties>
-    <property name="rangeX" value="50"/>
-   </properties>
-  </object>
-  <object name="movingwall" gid="15" x="580" y="373">
-   <properties>
-    <property name="rangeX" value="50"/>
-   </properties>
-  </object>
-  <object name="movingwall" gid="15" x="740" y="373">
-   <properties>
-    <property name="rangeX" value="50"/>
-   </properties>
-  </object>
-  <object name="movingwall" gid="15" x="500" y="373">
-   <properties>
-    <property name="rangeX" value="50"/>
-   </properties>
-  </object>
-  <object name="movingwall" gid="15" x="980" y="373">
-   <properties>
-    <property name="rangeX" value="50"/>
-   </properties>
-  </object>
-  <object name="movingwall" gid="15" x="900" y="373">
-   <properties>
-    <property name="rangeX" value="50"/>
-   </properties>
-  </object>
-  <object name="movingwall" gid="15" x="1060" y="373">
-   <properties>
-    <property name="rangeX" value="50"/>
-   </properties>
-  </object>
-  <object name="movingwall" gid="15" x="820" y="373">
-   <properties>
-    <property name="rangeX" value="50"/>
-   </properties>
-  </object>
-  <object name="movingwall" gid="15" x="1300" y="373">
-   <properties>
-    <property name="rangeX" value="50"/>
-   </properties>
-  </object>
-  <object name="movingwall" gid="15" x="1220" y="373">
-   <properties>
-    <property name="rangeX" value="50"/>
-   </properties>
-  </object>
-  <object name="movingwall" gid="15" x="1380" y="373">
-   <properties>
-    <property name="rangeX" value="50"/>
-   </properties>
-  </object>
-  <object name="movingwall" gid="15" x="1140" y="373">
-   <properties>
-    <property name="rangeX" value="50"/>
-   </properties>
-  </object>
-  <object name="movingwall" gid="15" x="1460" y="369">
-   <properties>
-    <property name="rangeX" value="50"/>
-   </properties>
-  </object>
-  <object name="movingwall" gid="15" x="100" y="373">
-   <properties>
-    <property name="rangeX" value="50"/>
-   </properties>
-  </object>
-  <object name="movingwall" gid="15" x="20" y="373">
-   <properties>
-    <property name="rangeX" value="50"/>
-   </properties>
-  </object>
-  <object name="movingwall" gid="15" x="1620" y="90">
-   <properties>
-    <property name="rangeX" value="-50"/>
-   </properties>
-  </object>
-  <object name="movingwall" gid="15" x="1540" y="90">
-   <properties>
-    <property name="rangeX" value="-50"/>
-   </properties>
-  </object>
-  <object name="crab" gid="8" x="1720" y="160">
-   <properties>
-    <property name="rangeY" value="10"/>
-   </properties>
-  </object>
-  <object name="movingwall" gid="15" x="1700" y="90">
-   <properties>
-    <property name="rangeX" value="-50"/>
-   </properties>
-  </object>
-  <object name="movingwall" gid="15" x="1780" y="90">
-   <properties>
-    <property name="rangeX" value="-50"/>
-   </properties>
-  </object>
-  <object name="movingwall" gid="15" x="1860" y="90">
-   <properties>
-    <property name="rangeX" value="-50"/>
-   </properties>
-  </object>
-  <object name="crab" gid="8" x="1720" y="244">
-   <properties>
-    <property name="rangeY" value="-10"/>
-   </properties>
-  </object>
-  <object name="crab" gid="8" x="1720" y="412">
-   <properties>
-    <property name="rangeY" value="-10"/>
-   </properties>
-  </object>
-  <object name="crab" gid="8" x="1720" y="328">
-   <properties>
-    <property name="rangeY" value="10"/>
-   </properties>
-  </object>
-  <object name="crab" gid="8" x="1720" y="580">
-   <properties>
-    <property name="rangeY" value="-10"/>
-   </properties>
-  </object>
-  <object name="crab" gid="8" x="1720" y="496">
-   <properties>
-    <property name="rangeY" value="10"/>
-   </properties>
-  </object>
-  <object name="crab" gid="8" x="1720" y="664">
-   <properties>
-    <property name="rangeY" value="10"/>
-   </properties>
-  </object>
+  <object name="spawn" gid="6" x="136" y="312"/>
+  <object name="goal" gid="7" x="1332" y="472"/>
+  <object name="stopper" gid="9" x="768" y="428"/>
+  <object name="stopper" gid="9" x="768" y="520"/>
  </objectgroup>
 </map>
