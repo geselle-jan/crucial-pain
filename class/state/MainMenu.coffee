@@ -17,7 +17,7 @@ CrucialPain.MainMenu.prototype =
     startGame: ->
         game.ui.blank.fadeTo ->
             game.state.clearCurrentState()
-            game.state.start 'LevelSelect'
+            game.state.start 'Level'
         return
     update: ->
         game.state.states.Default.update()
