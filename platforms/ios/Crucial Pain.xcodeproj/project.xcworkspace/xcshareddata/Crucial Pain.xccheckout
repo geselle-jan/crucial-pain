@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>59E8BFC6-C239-42B7-90B0-0EBF5C8F8B3F</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Crucial Pain</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>C526D0B0D176A3306E354B8D1C1313927023F515</key>
+		<string>gitlab.com:outofscopedevelopement/crucial-pain.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>platforms/ios/Crucial Pain.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>C526D0B0D176A3306E354B8D1C1313927023F515</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>gitlab.com:outofscopedevelopement/crucial-pain.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>C526D0B0D176A3306E354B8D1C1313927023F515</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>C526D0B0D176A3306E354B8D1C1313927023F515</string>
+			<key>IDESourceControlWCCName</key>
+			<string>crucial-pain</string>
+		</dict>
+	</array>
+</dict>
+</plist>
