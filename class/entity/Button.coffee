@@ -29,10 +29,15 @@ class Button extends Item
 		window.test = @text
 
 	onInputDown: ->
-        game.levelIndex = @label * 1
-        game.ui.blank.fadeTo ->
-            game.state.clearCurrentState()
-            game.state.start 'Level'
+		maxLevel = localStorage.getItem 'maxLevel'
+		maxLevel = maxLevel * 1
+		buttonIndex = @label * 1
+		unless buttonIndex > maxLevel
+			game.levelIndex = buttonIndex
+			@kill()
+			game.ui.blank.fadeTo ->
+				game.state.clearCurrentState()
+				game.state.start 'Level'
 
 	update: ->
 		@checkForOverlap()

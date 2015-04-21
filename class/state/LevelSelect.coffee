@@ -5,13 +5,23 @@ CrucialPain.LevelSelect.prototype =
         game.mode = 'menu'
         game.stage.setBackgroundColor '#000000'
 
+        unless localStorage.getItem 'maxLevel'
+            localStorage.setItem 'maxLevel', 1
+
+        maxLevel = localStorage.getItem 'maxLevel'
+        maxLevel = maxLevel * 1
+
         levelCount = 0
         while game.cache._tilemaps[''+(levelCount + 1)+'']
             levelCount++
-            new Button(
+            button = new Button(
                 x: (100 * ((levelCount - 1) % 10)) + 42 + scaleManager.levelOffsetX
                 y: (88 * Math.floor((levelCount - 1) / 10)) + 72 + scaleManager.levelOffsetY
                 label: '' + levelCount + '')
+            if maxLevel < levelCount
+                button.sprite.alpha = 0.25
+                button.text.alpha = 0.25
+            
 
         game.state.states.Default.create()
         game.ui.blank.hide()

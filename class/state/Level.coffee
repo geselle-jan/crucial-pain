@@ -9,6 +9,12 @@ CrucialPain.Level.prototype =
 
         game.levelIndex ?= 1
 
+        maxLevel = localStorage.getItem 'maxLevel'
+        maxLevel = maxLevel * 1
+
+        if game.levelIndex > maxLevel
+            localStorage.setItem 'maxLevel', game.levelIndex
+
         @level = game.level = new Level(
             index: game.levelIndex)
 
