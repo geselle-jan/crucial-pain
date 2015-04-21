@@ -57,7 +57,7 @@ class Puck
 			@moveTo spawn.x, spawn.y
 
 	update: ->
-		if game.controls.newPrimary
+		if game.controls.newPrimary and game.mode is 'level'
 			@smash()
 		@updateAnimation()
 

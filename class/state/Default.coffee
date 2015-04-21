@@ -7,16 +7,16 @@ CrucialPain.Default.prototype =
             game.controls.create()
         game.cameraManager = new CameraManager
         game.ui ?= {}
-        game.ui.fps = new FPS
         game.ui.blank = new Blank {visible: yes}
         unless game.controls.mobile
+            game.ui.fps = new FPS
             game.ui.crosshair = new Crosshair
         return
     update: ->
         game.controls.update()
         game.cameraManager.update()
-        game.ui.fps.update()
         unless game.controls.mobile
+            game.ui.fps.update()
             game.ui.crosshair.update()
         return
     render: ->

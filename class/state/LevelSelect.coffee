@@ -21,12 +21,23 @@ CrucialPain.LevelSelect.prototype =
             if maxLevel < levelCount
                 button.sprite.alpha = 0.25
                 button.text.alpha = 0.25
-            
+
+        backButton = game.add.bitmapText(0, 0, 'astonished', 'back', 36)
+        backButton.fixedToCamera = yes
+        backButton.cameraOffset.x = 32
+        backButton.cameraOffset.y = 16
+        backButton.inputEnabled = yes
+        backButton.events.onInputDown.add @startMainMenu, @    
 
         game.state.states.Default.create()
-        game.ui.blank.hide()
+        game.ui.blank.fadeFrom()
         return
     update: ->
         game.state.states.Default.update()
         return
     render: ->
+    startMainMenu: ->
+        game.mode = 'stateChange'
+        game.ui.blank.fadeTo =>
+            game.state.clearCurrentState()
+            @state.start 'MainMenu'

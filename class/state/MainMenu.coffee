@@ -12,7 +12,7 @@ CrucialPain.MainMenu.prototype =
         ], 10, true
         splashScreen.animations.play 'loop'
         game.state.states.Default.create()
-        game.ui.blank.hide()
+        game.ui.blank.fadeFrom()
         return
     startLevelSelect: ->
         game.ui.blank.fadeTo ->

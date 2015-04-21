@@ -20,6 +20,13 @@ CrucialPain.Level.prototype =
 
         game.puck = new Puck()
 
+        backButton = game.add.bitmapText(0, 0, 'astonished', 'back', 36)
+        backButton.fixedToCamera = yes
+        backButton.cameraOffset.x = 32
+        backButton.cameraOffset.y = 16
+        backButton.inputEnabled = yes
+        backButton.events.onInputDown.add @startLevelSelect, @
+
         game.state.states.Default.create()
         game.ui.blank.fadeFrom()
     update: ->
@@ -46,6 +53,11 @@ CrucialPain.Level.prototype =
             game.mode = 'stateChange'
             game.ui.blank.fadeTo =>
                 game.state.clearCurrentState()
-                @state.start 'Level' 
+                @state.start 'Level'
     render: ->
         #game.debug.body game.puck.sprite
+    startLevelSelect: ->
+        game.mode = 'stateChange'
+        game.ui.blank.fadeTo =>
+            game.state.clearCurrentState()
+            @state.start 'LevelSelect'
