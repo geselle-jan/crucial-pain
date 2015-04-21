@@ -19,6 +19,9 @@
     <feature name="LocalStorage">
         <param name="ios-package" value="CDVLocalStorage" />
     </feature>
+    <splash height="768" src="www/res/screen/ios/screen-ipad-landscape.png" width="1024" />
+    <splash height="1536" src="www/res/screen/ios/screen-ipad-landscape2x.png" width="2048" />
+    <splash height="1242" src="www/res/screen/ios/screen-default-landscape.png" width="2208" />
     <name>Crucial Pain</name>
     <description>
         HTML5 game by out of scope
@@ -60,5 +63,10 @@
     <gap:plugin name="org.apache.cordova.network-information" />
     <gap:plugin name="org.apache.cordova.splashscreen" />
     <gap:plugin name="org.apache.cordova.vibration" />
+    <icon src="www/res/icon/ios/72.png" />
+    <icon gap:platform="ios" height="57" src="www/res/icon/ios/57.png" width="57" />
+    <icon gap:platform="ios" height="72" src="www/res/icon/ios/72.png" width="72" />
+    <icon gap:platform="ios" height="114" src="www/res/icon/ios/114.png" width="114" />
+    <icon gap:platform="ios" height="144" src="www/res/icon/ios/144.png" width="144" />
     <access origin="*" />
 </widget>
