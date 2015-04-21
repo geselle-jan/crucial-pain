@@ -15,8 +15,8 @@ CrucialPain.LevelSelect.prototype =
         while game.cache._tilemaps[''+(levelCount + 1)+'']
             levelCount++
             button = new Button(
-                x: (100 * ((levelCount - 1) % 10)) + 42 + scaleManager.levelOffsetX
-                y: (88 * Math.floor((levelCount - 1) / 10)) + 72 + scaleManager.levelOffsetY
+                x: (100 * ((levelCount - 1) % 8)) + 143 + scaleManager.levelOffsetX
+                y: (88 * Math.floor((levelCount - 1) / 8)) + 152 + scaleManager.levelOffsetY
                 label: '' + levelCount + '')
             if maxLevel < levelCount
                 button.sprite.alpha = 0.25
