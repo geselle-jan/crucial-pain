@@ -31,6 +31,7 @@ module.exports = function(grunt) {
                 'class/entity/Portal.coffee',
                 'class/entity/Goal.coffee',
                 'class/entity/OneUp.coffee',
+                'class/entity/Button.coffee',
                 'class/entity/Puck.coffee',
                 'class/entity/Walker.coffee',
                 'class/entity/MovingWall.coffee',

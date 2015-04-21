@@ -3,18 +3,20 @@ CrucialPain.LevelSelect = (game) ->
 CrucialPain.LevelSelect.prototype =
     create: ->
         game.mode = 'menu'
-        game.stage.setBackgroundColor '#00ff00'
+        game.stage.setBackgroundColor '#000000'
+
+        levelCount = 0
+        while game.cache._tilemaps[''+(levelCount + 1)+'']
+            levelCount++
+            new Button(
+                x: (100 * ((levelCount - 1) % 10)) + 42 + scaleManager.levelOffsetX
+                y: (88 * Math.floor((levelCount - 1) / 10)) + 72 + scaleManager.levelOffsetY
+                label: '' + levelCount + '')
+
         game.state.states.Default.create()
         game.ui.blank.hide()
         return
-    startGame: ->
-        game.ui.blank.fadeTo ->
-            game.state.clearCurrentState()
-            game.state.start 'Level'
-        return
     update: ->
         game.state.states.Default.update()
-        if game.controls.primary
-            @startGame()
         return
     render: ->
