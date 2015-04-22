@@ -49,16 +49,16 @@ class Walker
 		newY = @sprite.body.position.y + @stepY + @bodySize[1]
 		@moveTo newX, newY
 		if @rangeX < 0
-			if newX < @x + @rangeX or newX is @x
+			if newX < @x + @rangeX or newX >= @x
 				@changeDirectionX()
 		else
-			if newX > @x + @rangeX or newX is @x
+			if newX > @x + @rangeX or newX <= @x
 				@changeDirectionX()
 		if @rangeY < 0
-			if newY < @y + @rangeY or newY is @y
+			if newY < @y + @rangeY or newY >= @y
 				@changeDirectionY()
 		else
-			if newY > @y + @rangeY or newY is @y
+			if newY > @y + @rangeY or newY <= @y
 				@changeDirectionY()
 
 	changeDirectionX: ->

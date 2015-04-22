@@ -5,6 +5,7 @@ CrucialPain.MainMenu.prototype =
         game.mode = 'menu'
         game.stage.setBackgroundColor '#000000'
         window.splashScreen = @add.sprite scaleManager.levelOffsetX, scaleManager.levelOffsetY, 'titlescreen'
+        window.splashScreen.scale.set 1 / scaleManager.scale
         splashScreen.animations.add 'loop', [
             0
             1

@@ -24,6 +24,7 @@ CrucialPain.Level.prototype =
         backButton.fixedToCamera = yes
         backButton.cameraOffset.x = 32
         backButton.cameraOffset.y = 16
+        backButton.scale.set scaleManager.scale
         backButton.inputEnabled = yes
         backButton.events.onInputDown.add @startLevelSelect, @
 

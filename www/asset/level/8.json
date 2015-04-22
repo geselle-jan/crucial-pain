@@ -587,6 +587,21 @@
                  "width":0,
                  "x":344,
                  "y":400
+                }, 
+                {
+                 "gid":13,
+                 "height":0,
+                 "name":"oneup",
+                 "properties":
+                    {
+
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":852,
+                 "y":188
                 }],
          "opacity":1,
          "type":"objectgroup",

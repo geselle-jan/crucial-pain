@@ -3,6 +3,7 @@ class FPS
     constructor: ->
         @text = game.add.bitmapText(0, 0, 'astonished', '', 36)
         @text.fixedToCamera = yes
+        @text.scale.set scaleManager.scale
 
     update: ->
         unless game.time.fps is 60

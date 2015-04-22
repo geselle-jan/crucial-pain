@@ -4,6 +4,7 @@ window.onerror = (message, url, lineNumber) ->
 scaleManager = new ScaleManager
 
 game = new (Phaser.Game)(scaleManager.gameWidth, scaleManager.gameHeight, Phaser.CANVAS, 'crucialPain', {}, false, false)
+
 # add game states
 game.state.add 'Boot', CrucialPain.Boot
 game.state.add 'Default', CrucialPain.Default
