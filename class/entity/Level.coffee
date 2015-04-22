@@ -190,6 +190,8 @@ class Level
 			scoreText = Helpers.ScoreToString game.time.now - @startTime
 		else
 			scoreText = Helpers.ScoreToString @levelScore
+			if @newHighscore
+				scoreText += ' new highscore'
 		@scoreCounter.setText scoreText
 		
 	win: ->
@@ -200,6 +202,8 @@ class Level
 			maxLevelScore = maxLevelScore * 1
 			unless maxLevelScore <= @levelScore
 				localStorage.setItem 'maxLevelScore' + @index + '', @levelScore
+				@newHighscore = yes
 		else
 			localStorage.setItem 'maxLevelScore' + @index + '', @levelScore
+			@newHighscore = yes
 		@done = yes
