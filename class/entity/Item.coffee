@@ -3,9 +3,12 @@ class Item
 	constructor: (options = {}) ->
 		@x = options.x ? 0
 		@y = options.y ? 0
+		@label = options.label ? ''
 		@sprite = @createSprite()
 		@moveTo @x, @y
 		@addAnimations()
+		@addPointerEvents?()
+		@addLabel?()
 
 	createSprite: ->
 		sprite = game.add.sprite 0 - @bodySize[2], 0 - @bodySize[3], @spritesheet
@@ -33,6 +36,8 @@ class Item
 	kill: ->
 		@createSmoke()
 		@sprite.kill()
+		@text?.kill()
+		
 
 	createSmoke: ->
 		@smoke = game.add.sprite @x - @bodySize[2], @y - @bodySize[3], @smokeSpritesheet

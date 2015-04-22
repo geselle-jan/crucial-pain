@@ -12,16 +12,16 @@ CrucialPain.MainMenu.prototype =
         ], 10, true
         splashScreen.animations.play 'loop'
         game.state.states.Default.create()
-        game.ui.blank.hide()
+        game.ui.blank.fadeFrom()
         return
-    startGame: ->
+    startLevelSelect: ->
         game.ui.blank.fadeTo ->
             game.state.clearCurrentState()
-            game.state.start 'Level'
+            game.state.start 'LevelSelect'
         return
     update: ->
         game.state.states.Default.update()
         if game.controls.primary
-            @startGame()
+            @startLevelSelect()
         return
     render: ->

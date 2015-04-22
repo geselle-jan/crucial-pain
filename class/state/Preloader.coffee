@@ -24,6 +24,7 @@ CrucialPain.Preloader.prototype =
         @load.spritesheet 'portalsmoke', 'asset/sprites/portalsmoke.png', 96, 96
         @load.spritesheet 'goal', 'asset/sprites/goal.png', 96, 96
         @load.spritesheet 'goalsmoke', 'asset/sprites/goalsmoke.png', 96, 96
+        @load.spritesheet 'button', 'asset/sprites/button.png', 96, 96
 
         @load.spritesheet 'wall_1x1', 'asset/sprites/wall_1x1.png', 72, 96
         @load.spritesheet 'wall_1x2', 'asset/sprites/wall_1x2.png', 72, 136
@@ -75,6 +76,8 @@ CrucialPain.Preloader.prototype =
         
 
         @load.bitmapFont 'silkscreen', 'asset/fonts/silkscreen/silkscreen.png', 'asset/fonts/silkscreen/silkscreen.fnt'
+        @load.bitmapFont 'astonished', 'asset/fonts/astonished/astonished.png', 'asset/fonts/astonished/astonished.fnt'
+
         return
     create: ->
         @state.start 'MainMenu'

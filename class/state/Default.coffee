@@ -7,8 +7,8 @@ CrucialPain.Default.prototype =
             game.controls.create()
         game.cameraManager = new CameraManager
         game.ui ?= {}
-        game.ui.fps = new FPS
         game.ui.blank = new Blank {visible: yes}
+        game.ui.fps = new FPS
         unless game.controls.mobile
             game.ui.crosshair = new Crosshair
         return

@@ -31,6 +31,7 @@ module.exports = function(grunt) {
                 'class/entity/Portal.coffee',
                 'class/entity/Goal.coffee',
                 'class/entity/OneUp.coffee',
+                'class/entity/Button.coffee',
                 'class/entity/Puck.coffee',
                 'class/entity/Walker.coffee',
                 'class/entity/MovingWall.coffee',
@@ -42,6 +43,7 @@ module.exports = function(grunt) {
                 'class/state/Default.coffee',
                 'class/state/Preloader.coffee',
                 'class/state/MainMenu.coffee',
+                'class/state/LevelSelect.coffee',
                 'class/state/Level.coffee',
                 'class/system/main.coffee'
             ],
