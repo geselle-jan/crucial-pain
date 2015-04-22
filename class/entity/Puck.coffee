@@ -60,6 +60,10 @@ class Puck
 		if game.controls.newPrimary and game.mode is 'level'
 			@smash()
 		@updateAnimation()
+		if @ready
+			@sprite.alpha = 1
+		else
+			@sprite.alpha = 0.66
 
 	smash: ->
 		force = 1.5
