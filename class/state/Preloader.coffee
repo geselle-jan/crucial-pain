@@ -25,7 +25,6 @@ CrucialPain.Preloader.prototype =
         @load.spritesheet 'goal', 'asset/sprites/goal.png', 96, 96
         @load.spritesheet 'goalsmoke', 'asset/sprites/goalsmoke.png', 96, 96
         @load.spritesheet 'button', 'asset/sprites/button.png', 96, 96
-        @load.spritesheet 'glow', 'asset/sprites/glow.png', 97, 100
 
         @load.spritesheet 'wall_1x1', 'asset/sprites/wall_1x1.png', 72, 96
         @load.spritesheet 'wall_1x2', 'asset/sprites/wall_1x2.png', 72, 136
