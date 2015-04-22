@@ -195,4 +195,11 @@ class Level
 	win: ->
 		@endTime = game.time.now
 		@levelScore = @endTime - @startTime
+		maxLevelScore = localStorage.getItem 'maxLevelScore' + @index + ''
+		if maxLevelScore
+			maxLevelScore = maxLevelScore * 1
+			unless maxLevelScore <= @levelScore
+				localStorage.setItem 'maxLevelScore' + @index + '', @levelScore
+		else
+			localStorage.setItem 'maxLevelScore' + @index + '', @levelScore
 		@done = yes
