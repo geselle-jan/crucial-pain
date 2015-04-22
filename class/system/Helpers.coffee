@@ -29,3 +29,8 @@ Helpers =
         else
             v = if y < tolerance then 'stand' + v else 'walk' + v
             v
+    ScoreToString: (s) ->
+        ms = s % 1000
+        s = (s - ms) / 1000
+        str = '' + s + '.' + Math.floor(ms / 100) + 's'
+        str

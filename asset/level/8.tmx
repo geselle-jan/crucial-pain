@@ -90,5 +90,6 @@
   <object name="oneup" gid="13" x="852" y="624"/>
   <object name="oneup" gid="13" x="340" y="624"/>
   <object name="oneup" gid="13" x="344" y="400"/>
+  <object name="oneup" gid="13" x="852" y="188"/>
  </objectgroup>
 </map>

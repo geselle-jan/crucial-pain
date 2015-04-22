@@ -10,7 +10,15 @@ class Level
 		@oneUps = @createOneUps()
 		@portals = @createPortals()
 		@gates = @createGates()
+		@startTime = game.time.now
 		@setBounds()
+		@createScoreCounter()
+		@done = no
+
+	createScoreCounter: ->
+		@scoreCounter = game.add.bitmapText(0, 0, 'astonished', '', 36)
+		@scoreCounter.fixedToCamera = yes
+		@scoreCounter.scale.set scaleManager.scale
 
 	createMap: ->
 		game.add.tilemap '' + @index + ''
@@ -171,4 +179,20 @@ class Level
 		for gate in @gates
 			gate.update()
 		@goal.update?()
+		if @goal.reached and not @done
+			@win()
+		@updateScoreCounter()
+
+	updateScoreCounter: ->
+		@scoreCounter.cameraOffset.x = 32
+		@scoreCounter.cameraOffset.y = game.camera.height - 32 - 32 * scaleManager.scale
+		unless @done
+			scoreText = Helpers.ScoreToString game.time.now - @startTime
+		else
+			scoreText = Helpers.ScoreToString @levelScore
+		@scoreCounter.setText scoreText
 		
+	win: ->
+		@endTime = game.time.now
+		@levelScore = @endTime - @startTime
+		@done = yes

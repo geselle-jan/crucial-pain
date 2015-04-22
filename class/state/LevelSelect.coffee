@@ -15,8 +15,8 @@ CrucialPain.LevelSelect.prototype =
         while game.cache._tilemaps[''+(levelCount + 1)+'']
             levelCount++
             button = new Button(
-                x: (100 * ((levelCount - 1) % 8)) + 143 + scaleManager.levelOffsetX
-                y: (88 * Math.floor((levelCount - 1) / 8)) + 152 + scaleManager.levelOffsetY
+                x: (100 * ((levelCount - 1) % 8)) + 28 + 115 + scaleManager.levelOffsetX - (scaleManager.scale * 330) + 330
+                y: ((48 + 40 / scaleManager.scale) * Math.floor((levelCount - 1) / 8)) + 100 + (52 / scaleManager.scale) + scaleManager.levelOffsetY
                 label: '' + levelCount + '')
             if maxLevel < levelCount
                 button.sprite.alpha = 0.25
@@ -26,6 +26,7 @@ CrucialPain.LevelSelect.prototype =
         backButton.fixedToCamera = yes
         backButton.cameraOffset.x = 32
         backButton.cameraOffset.y = 16
+        backButton.scale.set scaleManager.scale
         backButton.inputEnabled = yes
         backButton.events.onInputDown.add @startMainMenu, @    
 
