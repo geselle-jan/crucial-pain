@@ -10,6 +10,7 @@ class Level
 		@oneUps = @createOneUps()
 		@portals = @createPortals()
 		@gates = @createGates()
+		@fish = @createFish()
 		@startTime = game.time.now
 		@setBounds()
 		@createScoreCounter()
@@ -165,6 +166,16 @@ class Level
 					y: entity.y + scaleManager.levelOffsetY)
 		goal
 
+	createFish: ->
+		content = @tutorial['level'+@index+'']
+		fish = no
+		if content
+			fish = new Fish(
+				x: 50 * scaleManager.scale
+				y: 0,
+				content: content)
+		fish
+
 	update: ->
 		for wall in @walls
 			wall.update()
@@ -179,6 +190,7 @@ class Level
 		for gate in @gates
 			gate.update()
 		@goal.update?()
+		@fish.update?()
 		if @goal.reached and not @done
 			@win()
 		@updateScoreCounter()
@@ -207,3 +219,38 @@ class Level
 			localStorage.setItem 'maxLevelScore' + @index + '', @levelScore
 			@newHighscore = yes
 		@done = yes
+
+	tutorial:
+		level1: 'Tap where you want to move to.\nThe further away you tap, the faster you go.\nReach the pink face to get to the next level.'
+		level2: 'This is an enemy.\nIf you touch it you die.\nSo don\'t.'
+		level3: 'When you move, you won\'t be able\nto move again until you hit a wall.\nWhen you can move, your puck will be brighter.'
+		level4: 'The pink star is a portal.\nIt will take you to its counterpart.\nYour speed and direction will be preserved.'
+		level5: 'This is a gate. Gates open and close\nautomatically. If you are inside a gate\nwhile its closing, you die.'
+		level6: 'The orange blocks are sponges.\nThey make you stop and let you move again.'
+		level7: 'The yellow blocks are walking walls.\nBe careful, they won\'t enable you to move again.'
+		level8: 'You have 3 lifes. When you hit a wall you loose\na life but will able to move again. The items in\nthis level let you regain life. Good luck!'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

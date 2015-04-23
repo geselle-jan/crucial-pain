@@ -39,6 +39,7 @@ module.exports = function(grunt) {
                 'class/entity/Gate.coffee',
                 'class/entity/Crab.coffee',
                 'class/entity/Hermit.coffee',
+                'class/entity/Fish.coffee',
                 'class/state/Boot.coffee',
                 'class/state/Default.coffee',
                 'class/state/Preloader.coffee',

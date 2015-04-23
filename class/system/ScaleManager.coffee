@@ -49,7 +49,6 @@ class ScaleManager
 		@width = @width / device.scale
 		@height = @height / device.scale
 		@scale = device.scale
-		
 
 	calculateGameSize: ->
 		if @overflow is 'x'
