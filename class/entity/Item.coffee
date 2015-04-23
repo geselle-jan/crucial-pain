@@ -37,7 +37,6 @@ class Item
 		@createSmoke()
 		@sprite.kill()
 		@text?.kill()
-		
 
 	createSmoke: ->
 		@smoke = game.add.sprite @x - @bodySize[2], @y - @bodySize[3], @smokeSpritesheet
