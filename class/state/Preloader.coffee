@@ -8,7 +8,7 @@ CrucialPain.Preloader.prototype =
             bar: 'preloaderBar'
             center: yes)
         @load.setPreloadSprite @preloadBar.getSprite()
-        #console.log @preloadBar.getSprite()
+
         @load.spritesheet 'titlescreen', 'asset/sprites/titlescreen.png', 1024, 768
 
         @load.spritesheet 'cursor', 'asset/sprites/cursor.png', 48, 48
@@ -48,8 +48,6 @@ CrucialPain.Preloader.prototype =
         @load.spritesheet 'gate_S_front', 'asset/sprites/gate_S_front.png', 56, 56
         @load.spritesheet 'gate_W_front', 'asset/sprites/gate_W_front.png', 48, 96
         @load.spritesheet 'gate_E_front', 'asset/sprites/gate_E_front.png', 48, 96
-
-        #@load.tilemap '1', 'asset/level/test.json', null, Phaser.Tilemap.TILED_JSON
         
         @load.tilemap '1', 'asset/level/1.json', null, Phaser.Tilemap.TILED_JSON
         @load.tilemap '2', 'asset/level/2.json', null, Phaser.Tilemap.TILED_JSON
@@ -84,9 +82,12 @@ CrucialPain.Preloader.prototype =
         @load.tilemap '31', 'asset/level/31.json', null, Phaser.Tilemap.TILED_JSON
         @load.tilemap '32', 'asset/level/32.json', null, Phaser.Tilemap.TILED_JSON
         
-
         @load.bitmapFont 'silkscreen', 'asset/fonts/silkscreen/silkscreen.png', 'asset/fonts/silkscreen/silkscreen.fnt'
         @load.bitmapFont 'astonished', 'asset/fonts/astonished/astonished.png', 'asset/fonts/astonished/astonished.fnt'
+
+        @load.audio 'noise', ['asset/sounds/noise.mp3', 'asset/sounds/noise.ogg']
+        @load.audio 'breathe', ['asset/sounds/breathe.mp3', 'asset/sounds/breathe.ogg']
+        @load.audio 'pnptc', ['asset/sounds/pnptc.mp3', 'asset/sounds/pnptc.ogg']
 
         return
     create: ->

@@ -13,6 +13,11 @@ CrucialPain.MainMenu.prototype =
         ], 10, true
         splashScreen.animations.play 'loop'
         game.state.states.Default.create()
+
+        game.music = game.add.audio 'pnptc'
+        game.music.loop = yes
+        game.music.play()
+
         game.ui.blank.fadeFrom()
         return
     startLevelSelect: ->
