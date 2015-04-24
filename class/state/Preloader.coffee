@@ -74,6 +74,15 @@ CrucialPain.Preloader.prototype =
         @load.tilemap '21', 'asset/level/21.json', null, Phaser.Tilemap.TILED_JSON
         @load.tilemap '22', 'asset/level/22.json', null, Phaser.Tilemap.TILED_JSON
         @load.tilemap '23', 'asset/level/23.json', null, Phaser.Tilemap.TILED_JSON
+        @load.tilemap '24', 'asset/level/24.json', null, Phaser.Tilemap.TILED_JSON
+        @load.tilemap '25', 'asset/level/25.json', null, Phaser.Tilemap.TILED_JSON
+        @load.tilemap '26', 'asset/level/26.json', null, Phaser.Tilemap.TILED_JSON
+        @load.tilemap '27', 'asset/level/27.json', null, Phaser.Tilemap.TILED_JSON
+        @load.tilemap '28', 'asset/level/28.json', null, Phaser.Tilemap.TILED_JSON
+        @load.tilemap '29', 'asset/level/29.json', null, Phaser.Tilemap.TILED_JSON
+        @load.tilemap '30', 'asset/level/30.json', null, Phaser.Tilemap.TILED_JSON
+        @load.tilemap '31', 'asset/level/31.json', null, Phaser.Tilemap.TILED_JSON
+        @load.tilemap '32', 'asset/level/32.json', null, Phaser.Tilemap.TILED_JSON
         
 
         @load.bitmapFont 'silkscreen', 'asset/fonts/silkscreen/silkscreen.png', 'asset/fonts/silkscreen/silkscreen.fnt'

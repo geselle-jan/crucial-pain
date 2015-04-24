@@ -228,7 +228,8 @@ class Level
 		level5: 'This is a gate. Gates open and close\nautomatically. If you are inside a gate\nwhile its closing, you die.'
 		level6: 'The orange blocks are sponges.\nThey make you stop and let you move again.'
 		level7: 'The yellow blocks are walking walls.\nBe careful, they won\'t enable you to move again.'
-		level8: 'You have 3 lifes. When you hit a wall you loose\na life but will able to move again. The items in\nthis level let you regain life. Good luck!'
+		level8: 'You have 3 lifes. When you hit a wall you loose\na life but will able to move again.'
+		level9: 'The item in this level lets you regain a life.\nKeep your eyes open for these.\nGood luck!'
 
 
 

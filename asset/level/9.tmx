@@ -50,55 +50,41 @@
   </tile>
  </tileset>
  <objectgroup name="walls">
-  <object gid="3" x="16" y="248"/>
-  <object gid="3" x="16" y="520"/>
-  <object gid="3" x="16" y="676"/>
-  <object gid="5" x="16" y="752"/>
-  <object gid="5" x="140" y="752"/>
-  <object gid="5" x="388" y="752"/>
-  <object gid="5" x="264" y="752"/>
-  <object gid="5" x="636" y="752"/>
-  <object gid="5" x="512" y="752"/>
-  <object gid="5" x="760" y="752"/>
-  <object gid="5" x="884" y="752"/>
-  <object gid="5" x="388" y="92"/>
-  <object gid="5" x="140" y="92"/>
-  <object gid="5" x="760" y="92"/>
-  <object gid="5" x="884" y="92"/>
-  <object gid="5" x="16" y="92"/>
-  <object gid="5" x="264" y="92"/>
-  <object gid="5" x="512" y="92"/>
-  <object gid="5" x="636" y="92"/>
-  <object gid="2" x="16" y="364"/>
-  <object gid="5" x="344" y="520"/>
-  <object gid="5" x="716" y="520"/>
-  <object gid="5" x="220" y="520"/>
-  <object gid="5" x="468" y="520"/>
-  <object gid="5" x="592" y="520"/>
-  <object gid="5" x="344" y="324"/>
-  <object gid="5" x="716" y="324"/>
-  <object gid="5" x="220" y="324"/>
-  <object gid="5" x="468" y="324"/>
-  <object gid="5" x="592" y="324"/>
-  <object gid="3" x="964" y="248"/>
-  <object gid="2" x="964" y="364"/>
-  <object gid="3" x="964" y="520"/>
-  <object gid="3" x="964" y="676"/>
-  <object gid="2" x="796" y="442"/>
+  <object gid="2" x="460" y="760"/>
+  <object gid="4" x="636" y="320"/>
+  <object gid="5" x="124" y="80"/>
+  <object gid="5" x="252" y="80"/>
+  <object gid="5" x="380" y="80"/>
+  <object gid="5" x="508" y="80"/>
+  <object gid="5" x="764" y="80"/>
+  <object gid="5" x="636" y="80"/>
+  <object gid="3" x="892" y="440"/>
+  <object gid="3" x="892" y="600"/>
+  <object gid="3" x="76" y="320"/>
+  <object gid="3" x="76" y="160"/>
+  <object gid="5" x="252" y="320"/>
+  <object gid="5" x="508" y="320"/>
+  <object gid="5" x="124" y="480"/>
+  <object gid="5" x="380" y="320"/>
+  <object gid="3" x="892" y="760"/>
+  <object gid="3" x="676" y="480"/>
+  <object gid="3" x="460" y="480"/>
+  <object gid="3" x="460" y="640"/>
+  <object gid="5" x="508" y="760"/>
+  <object gid="4" x="636" y="760"/>
+  <object gid="3" x="76" y="480"/>
+  <object gid="3" x="252" y="480"/>
  </objectgroup>
  <objectgroup name="entities">
-  <object name="spawn" gid="6" x="704" y="420"/>
-  <object name="goal" gid="7" x="884" y="404"/>
-  <object name="portal" gid="14" x="888" y="180">
-   <properties>
-    <property name="pid" value="1"/>
-   </properties>
-  </object>
-  <object name="oneup" gid="13" x="688" y="620"/>
-  <object name="portal" gid="14" x="532" y="620">
-   <properties>
-    <property name="pid" value="1"/>
-   </properties>
-  </object>
+  <object name="spawn" gid="6" x="152" y="376"/>
+  <object name="goal" gid="7" x="576" y="412"/>
+  <object name="oneup" gid="13" x="784" y="472"/>
+  <object name="stopper" gid="9" x="723" y="756"/>
+  <object name="stopper" gid="9" x="765" y="756"/>
+  <object name="stopper" gid="9" x="807" y="756"/>
+  <object name="stopper" gid="9" x="849" y="756"/>
+  <object name="stopper" gid="9" x="892" y="272"/>
+  <object name="stopper" gid="9" x="892" y="184"/>
+  <object name="stopper" gid="9" x="892" y="92"/>
  </objectgroup>
 </map>
