@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="64" height="48" tilewidth="16" tileheight="16" backgroundcolor="#404040">
+ <tileset firstgid="1" name="walls" tilewidth="122" tileheight="154">
+  <tile id="0">
+   <image width="42" height="73" source="../editor-images/wall_1x1.png"/>
+  </tile>
+  <tile id="1">
+   <image width="42" height="114" source="../editor-images/wall_1x2.png"/>
+  </tile>
+  <tile id="2">
+   <image width="42" height="154" source="../editor-images/wall_1x3.png"/>
+  </tile>
+  <tile id="3">
+   <image width="83" height="74" source="../editor-images/wall_2x1.png"/>
+  </tile>
+  <tile id="4">
+   <image width="122" height="74" source="../editor-images/wall_3x1.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="6" name="enitities" tilewidth="239" tileheight="265">
+  <tile id="0">
+   <image width="65" height="65" source="../editor-images/puck.png"/>
+  </tile>
+  <tile id="1">
+   <image width="40" height="40" source="../editor-images/goal.png"/>
+  </tile>
+  <tile id="2">
+   <image width="38" height="38" source="../editor-images/crab.png"/>
+  </tile>
+  <tile id="3">
+   <image width="39" height="73" source="../editor-images/stopper.png"/>
+  </tile>
+  <tile id="4">
+   <image width="239" height="73" source="../editor-images/gateHorizontal.png"/>
+  </tile>
+  <tile id="5">
+   <image width="42" height="265" source="../editor-images/gateVertical.png"/>
+  </tile>
+  <tile id="6">
+   <image width="38" height="38" source="../editor-images/hermit.png"/>
+  </tile>
+  <tile id="7">
+   <image width="40" height="40" source="../editor-images/1up.png"/>
+  </tile>
+  <tile id="8">
+   <image width="40" height="40" source="../editor-images/portal.png"/>
+  </tile>
+  <tile id="9">
+   <image width="40" height="66" source="../editor-images/movingwall.png"/>
+  </tile>
+ </tileset>
+ <objectgroup name="walls">
+  <object gid="3" x="372" y="424"/>
+  <object gid="3" x="576" y="424"/>
+  <object gid="5" x="372" y="500"/>
+  <object gid="3" x="576" y="268"/>
+  <object gid="5" x="372" y="112"/>
+  <object gid="5" x="496" y="112"/>
+  <object gid="5" x="248" y="112"/>
+  <object gid="3" x="204" y="504"/>
+  <object gid="3" x="204" y="660"/>
+  <object gid="5" x="204" y="736"/>
+  <object gid="5" x="328" y="736"/>
+  <object gid="3" x="792" y="348"/>
+  <object gid="3" x="792" y="504"/>
+  <object gid="1" x="540" y="736"/>
+  <object gid="1" x="452" y="736"/>
+  <object gid="4" x="540" y="500"/>
+  <object gid="4" x="584" y="736"/>
+  <object gid="4" x="668" y="736"/>
+  <object gid="4" x="752" y="736"/>
+  <object gid="5" x="620" y="112"/>
+  <object gid="1" x="792" y="188"/>
+  <object gid="4" x="748" y="112"/>
+ </objectgroup>
+ <objectgroup name="entities">
+  <object name="spawn" gid="6" x="452" y="396"/>
+  <object name="goal" gid="7" x="684" y="224"/>
+  <object name="gateVertical" gid="11" x="496" y="720">
+   <properties>
+    <property name="timeClosed" value="200"/>
+    <property name="timeOpened" value="1800"/>
+   </properties>
+  </object>
+  <object name="stopper" gid="9" x="204" y="192"/>
+  <object name="stopper" gid="9" x="788" y="580"/>
+  <object name="stopper" gid="9" x="788" y="656"/>
+  <object name="stopper" gid="9" x="204" y="116"/>
+  <object name="stopper" gid="9" x="204" y="344"/>
+  <object name="stopper" gid="9" x="204" y="268"/>
+ </objectgroup>
+</map>
