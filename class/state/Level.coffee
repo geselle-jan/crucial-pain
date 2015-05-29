@@ -29,12 +29,12 @@ CrucialPain.Level.prototype =
         backButton.events.onInputDown.add @startLevelSelect, @
 
         game.music.onFadeComplete.addOnce (->
-            game.music = game.add.audio 'pnptc'
+            game.music = game.add.audio 'full'
             game.music.onDecoded.addOnce (->
                 game.music.fadeIn 800, yes
             ), @
         ), @
-        unless game.music.name is 'pnptc'
+        unless game.music.name is 'full'
             game.music.fadeOut 800
 
         game.state.states.Default.create()

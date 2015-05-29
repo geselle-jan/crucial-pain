@@ -85,9 +85,8 @@ CrucialPain.Preloader.prototype =
         @load.bitmapFont 'silkscreen', 'asset/fonts/silkscreen/silkscreen.png', 'asset/fonts/silkscreen/silkscreen.fnt'
         @load.bitmapFont 'astonished', 'asset/fonts/astonished/astonished.png', 'asset/fonts/astonished/astonished.fnt'
 
-        @load.audio 'noise', ['asset/sounds/noise.mp3', 'asset/sounds/noise.ogg']
-        @load.audio 'breathe', ['asset/sounds/breathe.mp3', 'asset/sounds/breathe.ogg']
-        @load.audio 'pnptc', ['asset/sounds/pnptc.mp3', 'asset/sounds/pnptc.ogg']
+        @load.audio 'intro', ['asset/sounds/intro.mp3', 'asset/sounds/intro.ogg']
+        @load.audio 'full', ['asset/sounds/full.mp3', 'asset/sounds/full.ogg']
 
         return
     create: ->

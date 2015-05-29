@@ -15,18 +15,19 @@ CrucialPain.MainMenu.prototype =
         game.state.states.Default.create()
 
         unless game.music
-            game.music = game.add.audio 'noise'
+            game.music = game.add.audio 'intro'
             game.music.onDecoded.addOnce (->
                 game.music.fadeIn 800, yes
             ), @
         else
             game.music.onFadeComplete.addOnce (->
-                game.music = game.add.audio 'noise'
+                game.music = game.add.audio 'intro'
                 game.music.onDecoded.addOnce (->
                     game.music.fadeIn 800, yes
                 ), @
             ), @
-            game.music.fadeOut 800
+            unless game.music.name is 'intro'
+                game.music.fadeOut 800
 
         game.ui.blank.fadeFrom()
         return
