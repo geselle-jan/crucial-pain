@@ -11,4 +11,7 @@ class MovingWall extends Walker
 
 	loopFrames: [0, 1, 2, 3, 4, 5, 6, 7]
 
+	soundName: 'movingwall'
+
 	onCollision: ->
+		@sound.play()

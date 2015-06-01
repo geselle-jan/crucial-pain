@@ -88,6 +88,15 @@ CrucialPain.Preloader.prototype =
         @load.audio 'intro', ['asset/sounds/intro.mp3', 'asset/sounds/intro.ogg']
         @load.audio 'full', ['asset/sounds/full.mp3', 'asset/sounds/full.ogg']
 
+        @load.audio 'wallhit', ['asset/sounds/wallhit.mp3', 'asset/sounds/wallhit.ogg']
+        @load.audio 'goal', ['asset/sounds/goal.mp3', 'asset/sounds/goal.ogg']
+        @load.audio 'portal', ['asset/sounds/portal.mp3', 'asset/sounds/portal.ogg']
+        @load.audio 'stickywall', ['asset/sounds/stickywall.mp3', 'asset/sounds/stickywall.ogg']
+        @load.audio 'movingwall', ['asset/sounds/movingwall.mp3', 'asset/sounds/movingwall.ogg']
+        @load.audio 'oneup', ['asset/sounds/oneup.mp3', 'asset/sounds/oneup.ogg']
+        @load.audio 'enemy', ['asset/sounds/enemy.mp3', 'asset/sounds/enemy.ogg']
+        @load.audio 'death', ['asset/sounds/death.mp3', 'asset/sounds/death.ogg']
+
         return
     create: ->
         @state.start 'MainMenu'

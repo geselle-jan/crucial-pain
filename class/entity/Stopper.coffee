@@ -17,6 +17,7 @@ class Stopper
 		@sprite = @createSprite()
 		@moveTo @x, @y
 		@addAnimations()
+		@sound = game.add.audio 'stickywall'
 
 	createSprite: ->
 		sprite = game.add.sprite 0 - @bodySize[2], 0 - @bodySize[3], @spritesheet
@@ -43,3 +44,4 @@ class Stopper
 	onCollision: ->
 		game.puck.stop()
 		game.puck.ready = yes
+		@sound.play()

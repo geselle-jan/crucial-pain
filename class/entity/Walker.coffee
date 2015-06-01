@@ -11,6 +11,7 @@ class Walker
 		@sprite = @createSprite()
 		@moveTo @x, @y
 		@addAnimations()
+		@addSound()
 
 	createSprite: ->
 		sprite = game.add.sprite 0 - @bodySize[2], 0 - @bodySize[3], @spritesheet
@@ -23,6 +24,10 @@ class Walker
 		loopFPS = 10
 		@sprite.animations.add 'loop', @loopFrames, loopFPS, true
 		@sprite.animations.play 'loop'
+
+	addSound: ->
+		if @soundName?
+			@sound = game.add.audio @soundName
 
 	moveTo: (x, y) ->
 		@sprite.position.setTo x - @bodySize[2], y - @bodySize[3] - @bodySize[1]

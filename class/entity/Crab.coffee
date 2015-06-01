@@ -11,9 +11,12 @@ class Crab extends Walker
 
 	loopFrames: [0, 1, 2, 3]
 
+	soundName: 'enemy'
+
 	onOverlap: ->
 		game.puck.stop()
 		game.puck.health = 0
+		@sound.play()
 
 	onCollision: ->
 		@onOverlap()
