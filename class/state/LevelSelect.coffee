@@ -35,7 +35,34 @@ CrucialPain.LevelSelect.prototype =
         backButton.cameraOffset.y = 16
         backButton.scale.set scaleManager.scale
         backButton.inputEnabled = yes
-        backButton.events.onInputDown.add @startMainMenu, @    
+        backButton.events.onInputDown.add @startMainMenu, @
+
+        @musicButton = game.add.bitmapText 0, 0, 'astonished', 'music on', 36
+        @musicButton.text = 'music off' if game.volume.music is 0
+        @musicButton.fixedToCamera = yes
+        @musicButton.cameraOffset.x = game.camera.width - 32 - @musicButton.width
+        @musicButton.cameraOffset.y = game.camera.height - 32 - @musicButton.height
+        @musicButton.scale.set scaleManager.scale
+        @musicButton.inputEnabled = yes
+        @musicButton.events.onInputDown.add @toggleMusic, @
+
+        if game.volume.music is 0
+           game.music.fadeOut 800
+        else
+            game.music.onFadeComplete.addOnce (->
+                game.music = game.add.audio 'intro'
+                if game.volume.music > 0
+                    game.music.onDecoded.addOnce (->
+                        game.music.fadeIn 800, yes
+                    ), @
+                else
+                    game.music.onDecoded.addOnce (->
+                        game.music.play()
+                        game.music.volume = game.volume.music
+                    ), @
+            ), @
+        unless game.music.name is 'intro'
+            game.music.fadeOut 800
 
         game.state.states.Default.create()
         game.ui.blank.fadeFrom()
@@ -49,3 +76,11 @@ CrucialPain.LevelSelect.prototype =
         game.ui.blank.fadeTo =>
             game.state.clearCurrentState()
             @state.start 'MainMenu'
+    toggleMusic: ->
+        game.volume.music = Math.abs game.volume.music - 1
+        game.music.volume = game.volume.music
+        if game.volume.music is 0
+            @musicButton.text = 'music off'
+        else
+            @musicButton.text = 'music on'
+        @musicButton.cameraOffset.x = game.camera.width - 32 - @musicButton.width

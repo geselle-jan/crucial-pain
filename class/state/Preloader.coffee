@@ -8,7 +8,7 @@ CrucialPain.Preloader.prototype =
             bar: 'preloaderBar'
             center: yes)
         @load.setPreloadSprite @preloadBar.getSprite()
-        #console.log @preloadBar.getSprite()
+
         @load.spritesheet 'titlescreen', 'asset/sprites/titlescreen.png', 1024, 768
 
         @load.spritesheet 'cursor', 'asset/sprites/cursor.png', 48, 48
@@ -48,8 +48,6 @@ CrucialPain.Preloader.prototype =
         @load.spritesheet 'gate_S_front', 'asset/sprites/gate_S_front.png', 56, 56
         @load.spritesheet 'gate_W_front', 'asset/sprites/gate_W_front.png', 48, 96
         @load.spritesheet 'gate_E_front', 'asset/sprites/gate_E_front.png', 48, 96
-
-        #@load.tilemap '1', 'asset/level/test.json', null, Phaser.Tilemap.TILED_JSON
         
         @load.tilemap '1', 'asset/level/1.json', null, Phaser.Tilemap.TILED_JSON
         @load.tilemap '2', 'asset/level/2.json', null, Phaser.Tilemap.TILED_JSON
@@ -84,9 +82,20 @@ CrucialPain.Preloader.prototype =
         @load.tilemap '31', 'asset/level/31.json', null, Phaser.Tilemap.TILED_JSON
         @load.tilemap '32', 'asset/level/32.json', null, Phaser.Tilemap.TILED_JSON
         
-
         @load.bitmapFont 'silkscreen', 'asset/fonts/silkscreen/silkscreen.png', 'asset/fonts/silkscreen/silkscreen.fnt'
         @load.bitmapFont 'astonished', 'asset/fonts/astonished/astonished.png', 'asset/fonts/astonished/astonished.fnt'
+
+        @load.audio 'intro', ['asset/sounds/intro.mp3', 'asset/sounds/intro.ogg']
+        @load.audio 'full', ['asset/sounds/full.mp3', 'asset/sounds/full.ogg']
+
+        @load.audio 'wallhit', ['asset/sounds/wallhit.mp3', 'asset/sounds/wallhit.ogg']
+        @load.audio 'goal', ['asset/sounds/goal.mp3', 'asset/sounds/goal.ogg']
+        @load.audio 'portal', ['asset/sounds/portal.mp3', 'asset/sounds/portal.ogg']
+        @load.audio 'stickywall', ['asset/sounds/stickywall.mp3', 'asset/sounds/stickywall.ogg']
+        @load.audio 'movingwall', ['asset/sounds/movingwall.mp3', 'asset/sounds/movingwall.ogg']
+        @load.audio 'oneup', ['asset/sounds/oneup.mp3', 'asset/sounds/oneup.ogg']
+        @load.audio 'enemy', ['asset/sounds/enemy.mp3', 'asset/sounds/enemy.ogg']
+        @load.audio 'death', ['asset/sounds/death.mp3', 'asset/sounds/death.ogg']
 
         return
     create: ->

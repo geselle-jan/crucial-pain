@@ -28,6 +28,16 @@ CrucialPain.Level.prototype =
         backButton.inputEnabled = yes
         backButton.events.onInputDown.add @startLevelSelect, @
 
+        game.music.onFadeComplete.addOnce (->
+            game.music = game.add.audio 'full'
+            if game.volume.music > 0
+                game.music.onDecoded.addOnce (->
+                    game.music.fadeIn 800, yes
+                ), @
+        ), @
+        unless game.music.name is 'full'
+            game.music.fadeOut 800
+
         game.state.states.Default.create()
         game.ui.blank.fadeFrom()
     update: ->
