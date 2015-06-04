@@ -15,9 +15,6 @@ class Puck
 		@sprite = @createSprite()
 		@addAnimations()
 		@moveToSpawn()
-		@soundVolumeAdjustment = -0.5
-		@sound = game.add.audio 'death'
-		@sound.volume = game.volume.fx + @soundVolumeAdjustment
 
 	createSprite: ->
 		sprite = game.add.sprite 0 - @bodySize[2], 0 - @bodySize[3], 'puck'
@@ -93,4 +90,4 @@ class Puck
 		@activate()
 		if @health is 0
 			@stop()
-			@sound.play()
+			game.fx.death.play()

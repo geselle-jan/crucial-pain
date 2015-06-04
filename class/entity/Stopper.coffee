@@ -44,4 +44,4 @@ class Stopper
 	onCollision: ->
 		game.puck.stop()
 		game.puck.ready = yes
-		@sound.play()
+		game.fx.stickywall.play()

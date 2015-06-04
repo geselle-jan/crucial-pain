@@ -15,10 +15,6 @@ class Portal extends Item
 
 	smokeFrames: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-	soundName: 'portal'
-
-	soundVolumeAdjustment: 0
-
 	constructor: (options = {}) ->
 		@pid = options.pid ? 1
 		super options
@@ -31,7 +27,7 @@ class Portal extends Item
 		target.kill()
 		game.puck.sprite.position.x += deltaX
 		game.puck.sprite.position.y += deltaY
-		@sound.play()
+		game.fx.portal.play()
 
 	getTarget: ->
 		target

@@ -46,9 +46,6 @@ class Wall
 		@sanitizeSize()
 		@sprite = @createSprite()
 		@addAnimations @sprite
-		@soundVolumeAdjustment = -0.2
-		@sound = game.add.audio 'wallhit'
-		@sound.volume = game.volume.fx + @soundVolumeAdjustment
 
 	sanitizeSize: ->
 		if @getSize() not in @sizes
@@ -77,5 +74,5 @@ class Wall
 
 	checkForCollisions: ->
 		if game.physics.arcade.collide game.puck.sprite, @sprite
-			@sound.play()
+			game.fx.wallhit.play()
 			game.puck.damage()

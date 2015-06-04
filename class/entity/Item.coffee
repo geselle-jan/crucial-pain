@@ -9,7 +9,6 @@ class Item
 		@addAnimations()
 		@addPointerEvents?()
 		@addLabel?()
-		@addSound()
 
 	createSprite: ->
 		sprite = game.add.sprite 0 - @bodySize[2], 0 - @bodySize[3], @spritesheet
@@ -22,11 +21,6 @@ class Item
 		loopFPS = 10
 		@sprite.animations.add 'loop', @loopFrames, loopFPS, true
 		@sprite.animations.play 'loop'
-
-	addSound: ->
-		if @soundName?
-			@sound = game.add.audio @soundName
-			@sound.volume = game.volume.fx + @soundVolumeAdjustment
 
 	moveTo: (x, y) ->
 		@sprite.position.setTo x - @bodySize[2], y - @bodySize[3] - @bodySize[1]

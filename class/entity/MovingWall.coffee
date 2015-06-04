@@ -11,9 +11,5 @@ class MovingWall extends Walker
 
 	loopFrames: [0, 1, 2, 3, 4, 5, 6, 7]
 
-	soundName: 'movingwall'
-
-	soundVolumeAdjustment: -0.5
-
 	onCollision: ->
-		@sound.play()
+		game.fx.movingwall.play()

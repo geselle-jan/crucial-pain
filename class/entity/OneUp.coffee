@@ -15,11 +15,7 @@ class OneUp extends Item
 
 	smokeFrames: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-	soundName: 'oneup'
-
-	soundVolumeAdjustment: 0
-
 	onOverlap: ->
 		@kill()
-		@sound.play()
+		game.fx.oneup.play()
 		if game.puck.health < 3 then game.puck.health++

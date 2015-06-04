@@ -19,7 +19,10 @@ CrucialPain.MainMenu.prototype =
                 music: 1
                 fx: 1
 
-        unless game.music
+        unless game.fx?
+            game.fx = new FX
+
+        unless game.music?
             game.music = game.add.audio 'intro'
             game.music.volume = game.volume.music
             if game.volume.music > 0
