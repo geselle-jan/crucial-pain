@@ -13,6 +13,8 @@ CrucialPain.Preloader.prototype =
 
         @load.spritesheet 'cursor', 'asset/sprites/cursor.png', 48, 48
 
+        @load.spritesheet 'logo', 'asset/sprites/oos.png', 300, 300
+
         @load.spritesheet 'puck', 'asset/sprites/puck.png', 96, 192
         @load.spritesheet 'crab', 'asset/sprites/crab.png', 96, 96
         @load.spritesheet 'hermit', 'asset/sprites/hermit.png', 96, 96

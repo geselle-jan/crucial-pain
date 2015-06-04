@@ -5,6 +5,9 @@ CrucialPain.LevelSelect.prototype =
         game.mode = 'menu'
         game.stage.setBackgroundColor '#000000'
 
+        logo = game.add.sprite 0, 0, 'logo'
+        logo.position.y = game.camera.height - logo.height
+
         unless localStorage.getItem 'maxLevel'
             localStorage.setItem 'maxLevel', 1
 
