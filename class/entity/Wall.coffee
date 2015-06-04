@@ -46,7 +46,7 @@ class Wall
 		@sanitizeSize()
 		@sprite = @createSprite()
 		@addAnimations @sprite
-		@soundVolumeAdjustment = 0
+		@soundVolumeAdjustment = -0.2
 		@sound = game.add.audio 'wallhit'
 		@sound.volume = game.volume.fx + @soundVolumeAdjustment
 

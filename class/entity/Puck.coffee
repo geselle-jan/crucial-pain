@@ -15,7 +15,7 @@ class Puck
 		@sprite = @createSprite()
 		@addAnimations()
 		@moveToSpawn()
-		@soundVolumeAdjustment = 0
+		@soundVolumeAdjustment = -0.5
 		@sound = game.add.audio 'death'
 		@sound.volume = game.volume.fx + @soundVolumeAdjustment
 

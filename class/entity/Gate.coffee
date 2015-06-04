@@ -134,7 +134,7 @@ class Gate
 
 	loopFrames: [0, 1, 2]
 
-	soundVolumeAdjustment: 0
+	soundVolumeAdjustment: -0.5
 
 	soundName: 'movingwall'
 
