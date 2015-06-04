@@ -13,7 +13,7 @@ class Crab extends Walker
 
 	soundName: 'enemy'
 
-	soundVolumeAdjustment: 0
+	soundVolumeAdjustment: -0.5
 
 	onOverlap: ->
 		game.puck.stop()

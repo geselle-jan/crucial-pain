@@ -13,7 +13,7 @@ class MovingWall extends Walker
 
 	soundName: 'movingwall'
 
-	soundVolumeAdjustment: 0
+	soundVolumeAdjustment: -0.5
 
 	onCollision: ->
 		@sound.play()

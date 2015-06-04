@@ -77,7 +77,10 @@ CrucialPain.LevelSelect.prototype =
             game.state.clearCurrentState()
             @state.start 'MainMenu'
     toggleMusic: ->
-        game.volume.music = Math.abs game.volume.music - 1
+        if game.volume.music is 1
+            game.volume.music = 0
+        else
+            game.volume.music = 1
         game.music.volume = game.volume.music
         if game.volume.music is 0
             @musicButton.text = 'music off'
