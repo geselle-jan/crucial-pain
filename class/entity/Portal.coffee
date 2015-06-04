@@ -17,6 +17,8 @@ class Portal extends Item
 
 	soundName: 'portal'
 
+	soundVolumeAdjustment: 0
+
 	constructor: (options = {}) ->
 		@pid = options.pid ? 1
 		super options

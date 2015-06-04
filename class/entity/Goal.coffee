@@ -19,6 +19,8 @@ class Goal extends Item
 
 	soundName: 'goal'
 
+	soundVolumeAdjustment: 0
+
 	onOverlap: ->
 		@kill()
 		game.puck.stop()

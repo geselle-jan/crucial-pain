@@ -17,6 +17,8 @@ class OneUp extends Item
 
 	soundName: 'oneup'
 
+	soundVolumeAdjustment: 0
+
 	onOverlap: ->
 		@kill()
 		@sound.play()

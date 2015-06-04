@@ -30,9 +30,10 @@ CrucialPain.Level.prototype =
 
         game.music.onFadeComplete.addOnce (->
             game.music = game.add.audio 'full'
-            game.music.onDecoded.addOnce (->
-                game.music.fadeIn 800, yes
-            ), @
+            if game.volume.music > 0
+                game.music.onDecoded.addOnce (->
+                    game.music.fadeIn 800, yes
+                ), @
         ), @
         unless game.music.name is 'full'
             game.music.fadeOut 800

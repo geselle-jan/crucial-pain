@@ -26,6 +26,7 @@ class Item
 	addSound: ->
 		if @soundName?
 			@sound = game.add.audio @soundName
+			@sound.volume = game.volume.fx + @soundVolumeAdjustment
 
 	moveTo: (x, y) ->
 		@sprite.position.setTo x - @bodySize[2], y - @bodySize[3] - @bodySize[1]
