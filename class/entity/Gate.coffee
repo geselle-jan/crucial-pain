@@ -134,6 +134,10 @@ class Gate
 
 	loopFrames: [0, 1, 2]
 
+	soundVolumeAdjustment: 0
+
+	soundName: 'movingwall'
+
 	constructor: (options = {}) ->
 		@x = options.x ? 0
 		@y = options.y ? 0
@@ -219,6 +223,8 @@ class Gate
 		@closingTimer = game.time.now
 		@openedTimer = game.time.now
 		@closedTimer = game.time.now
+		@sound = game.add.audio @soundName
+		@sound.volume = game.volume.fx + @soundVolumeAdjustment
 
 	createSprite: (x, y, sheet, size, physics, loopAnimation)->
 		sprite = game.add.sprite 0 - size[2], 0 - size[3], sheet
@@ -468,9 +474,12 @@ class Gate
 
 	onCollision: ->
 		game.puck.ready = yes
+		@sound.play()
 
 	onOverlap: ->
 		game.puck.stop()
+		if game.puck.health > 0
+			game.puck.sound.play()
 		game.puck.health = 0
 
 	open: ->
