@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.phonegap.crucialpain" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="com.outofscopedev.crucialpain" version="1.1.1" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <preference name="AllowInlineMediaPlayback" value="false" />
     <preference name="BackupWebStorage" value="cloud" />
     <preference name="DisallowOverscroll" value="false" />
@@ -30,7 +30,7 @@
     <content src="index.html" />
     <preference name="permissions" value="none" />
     <preference name="orientation" value="landscape" />
-    <preference name="target-device" value="universal" />
+    <preference name="target-device" value="tablet" />
     <preference name="fullscreen" value="true" />
     <preference name="webviewbounce" value="true" />
     <preference name="prerendered-icon" value="true" />
@@ -64,7 +64,9 @@
     <icon src="www/res/icon/ios/72.png" />
     <icon gap:platform="ios" height="57" src="www/res/icon/ios/57.png" width="57" />
     <icon gap:platform="ios" height="72" src="www/res/icon/ios/72.png" width="72" />
+    <icon gap:platform="ios" height="76" src="www/res/icon/ios/76.png" width="76" />
     <icon gap:platform="ios" height="114" src="www/res/icon/ios/114.png" width="114" />
     <icon gap:platform="ios" height="144" src="www/res/icon/ios/144.png" width="144" />
+    <icon gap:platform="ios" height="152" src="www/res/icon/ios/152.png" width="152" />
     <access origin="*" />
 </widget>

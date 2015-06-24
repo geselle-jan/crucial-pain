@@ -49,36 +49,26 @@
       </dict>
     </dict>
     <key>CFBundleIdentifier</key>
-    <string>com.phonegap.crucialpain</string>
+    <string>com.outofscopedev.crucialpain</string>
     <key>CFBundleInfoDictionaryVersion</key>
     <string>6.0</string>
     <key>CFBundleName</key>
     <string>${PRODUCT_NAME}</string>
     <key>CFBundlePackageType</key>
     <string>APPL</string>
+    <key>CFBundleShortVersionString</key>
+    <string>1.1.1</string>
     <key>CFBundleSignature</key>
     <string>????</string>
     <key>CFBundleVersion</key>
-    <string>1.0.0</string>
-    <key>CFBundleShortVersionString</key>
-    <string>1.0.0</string>
+    <string>1.1.1</string>
     <key>LSRequiresIPhoneOS</key>
     <true/>
     <key>NSMainNibFile</key>
     <string></string>
-    <key>NSMainNibFile~ipad</key>
-    <string></string>
-    <key>UISupportedInterfaceOrientations</key>
+    <key>UIInterfaceOrientation</key>
     <array>
       <string>UIInterfaceOrientationLandscapeLeft</string>
-      <string>UIInterfaceOrientationLandscapeRight</string>
-    </array>
-    <key>UISupportedInterfaceOrientations~ipad</key>
-    <array>
-      <string>UIInterfaceOrientationPortrait</string>
-      <string>UIInterfaceOrientationLandscapeLeft</string>
-      <string>UIInterfaceOrientationPortraitUpsideDown</string>
-      <string>UIInterfaceOrientationLandscapeRight</string>
     </array>
     <key>UILaunchImages</key>
     <array>
@@ -183,9 +173,17 @@
         <string>{768, 1024}</string>
       </dict>
     </array>
-    <key>UIInterfaceOrientation</key>
+    <key>UIStatusBarHidden~ipad</key>
+    <true/>
+    <key>UISupportedInterfaceOrientations</key>
     <array>
       <string>UIInterfaceOrientationLandscapeLeft</string>
+      <string>UIInterfaceOrientationLandscapeRight</string>
+    </array>
+    <key>UISupportedInterfaceOrientations~ipad</key>
+    <array>
+      <string>UIInterfaceOrientationLandscapeLeft</string>
+      <string>UIInterfaceOrientationLandscapeRight</string>
     </array>
   </dict>
 </plist>
