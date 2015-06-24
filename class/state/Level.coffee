@@ -40,6 +40,7 @@ CrucialPain.Level.prototype =
 
         game.state.states.Default.create()
         game.ui.blank.fadeFrom()
+        window.analytics?.trackView 'Level ' + game.levelIndex
     update: ->
         that = this
         game.state.states.Default.update()

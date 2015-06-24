@@ -69,6 +69,7 @@ CrucialPain.LevelSelect.prototype =
 
         game.state.states.Default.create()
         game.ui.blank.fadeFrom()
+        window.analytics?.trackView 'Level Select'
         return
     update: ->
         game.state.states.Default.update()

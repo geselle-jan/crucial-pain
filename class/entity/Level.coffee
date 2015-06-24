@@ -209,6 +209,7 @@ class Level
 	win: ->
 		@endTime = game.time.now
 		@levelScore = @endTime - @startTime
+		window.analytics?.trackEvent 'Level', 'Level ' + @index, 'Win', @levelScore / 1000
 		maxLevelScore = localStorage.getItem 'maxLevelScore' + @index + ''
 		if maxLevelScore
 			maxLevelScore = maxLevelScore * 1

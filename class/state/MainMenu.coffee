@@ -44,6 +44,7 @@ CrucialPain.MainMenu.prototype =
                 game.music.fadeOut 800
 
         game.ui.blank.fadeFrom()
+        window.analytics?.trackView 'Title Screen'
         return
     startLevelSelect: ->
         game.ui.blank.fadeTo ->
